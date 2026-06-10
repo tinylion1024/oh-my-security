@@ -54,6 +54,14 @@ def main():
     cvss_parser.add_argument("-i", choices=["H", "L", "N"], required=True, help="Integrity (H,L,N)")
     cvss_parser.add_argument("-a", choices=["H", "L", "N"], required=True, help="Availability (H,L,N)")
 
+    # Command: code
+    code_parser = subparsers.add_parser("code", help="个人代码防破产审计 (防 Secret 泄露与低级漏洞)")
+    code_parser.add_argument("path", type=str, help="代码目录或文件路径 (如 '.')")
+
+    # Command: content
+    content_parser = subparsers.add_parser("content", help="创作者内容风控排雷 (防封号与隐私泄露)")
+    content_parser.add_argument("path", type=str, help="Markdown 或文本文件路径 (如 'draft.md')")
+
     args = parser.parse_args()
 
     if args.command is None:
@@ -90,6 +98,26 @@ def main():
             console.print(f"\n[bold]CVSS 3.1 预估基础分:[/bold] [{color}]{score}[/{color}]")
         else:
             print(f"\nCVSS 3.1 预估基础分: {score}")
+
+    elif args.command == "code":
+        from oms_core.auditor import audit_code
+        if console:
+            with console.status(f"[bold cyan]正在呼叫 AI 审计官扫描 {args.path} ...[/bold cyan]", spinner="dots"):
+                report = audit_code(args.path)
+            console.print(Markdown(report))
+        else:
+            print(f"正在扫描 {args.path} ...")
+            print(audit_code(args.path))
+
+    elif args.command == "content":
+        from oms_core.auditor import audit_content
+        if console:
+            with console.status(f"[bold magenta]正在呼叫内容风控专家审查 {args.path} ...[/bold magenta]", spinner="dots"):
+                report = audit_content(args.path)
+            console.print(Markdown(report))
+        else:
+            print(f"正在审查 {args.path} ...")
+            print(audit_content(args.path))
 
 if __name__ == "__main__":
     main()
