@@ -1,0 +1,24 @@
+{
+  "name": "security-master-skill",
+  "version": "1.0.0",
+  "description": "Security Strategy Brain - Expert knowledge for Infosec, Bizsec, and AI Security.",
+  "author": "Security Master Team",
+  "entrypoint": "SKILL.md",
+  "capabilities": [
+    "threat_modeling",
+    "risk_assessment",
+    "compliance_mapping",
+    "incident_analysis",
+    "security_architecture_design"
+  ],
+  "dependencies": {
+    "python": ">=3.9",
+    "packages": ["pydantic", "pyyaml"]
+  },
+  "structure": {
+    "agents": "agents/",
+    "knowledge": "knowledge/",
+    "references": "references/",
+    "scripts": "scripts/"
+  }
+}

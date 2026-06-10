@@ -1,0 +1,95 @@
+#!/usr/bin/env python3
+"""
+Oh-My-Security (OMS) 核心 CLI 引擎
+"""
+import sys
+import argparse
+import os
+import json
+from oms_core.retriever import SecurityKnowledgeRetriever
+from oms_core.cvss_calc import CVSSCalculator
+
+# 尝试导入 Rich 以获得酷炫的终端输出，如果没有则使用普通 print
+try:
+    from rich.console import Console
+    from rich.markdown import Markdown
+    from rich.table import Table
+    console = Console()
+except ImportError:
+    console = None
+
+def print_logo():
+    logo = """
+  ____  _       __  __          ____                       _ _         
+ / __ \| |     |  \/  |        / ___|                     (_) |        
+| |  | | |__   | \  / |_   _  | |___  ___  ___ _   _ _ __  _| |_ _   _ 
+| |  | | '_ \  | |\/| | | | |  \___ \/ _ \/ __| | | | '__| | | __| | | |
+| |__| | | | | | |  | | |_| |  ____) |  __/ (__| |_| | |  | | | |_| |_| |
+ \____/|_| |_| |_|  |_|\__, | |_____/ \___|\___|\__,_|_|  |_|_|\__|\__, |
+                        __/ |                                       __/ |
+                       |___/                                       |___/ 
+    """
+    if console:
+        console.print(f"[bold green]{logo}[/bold green]")
+    else:
+        print(logo)
+
+def main():
+    parser = argparse.ArgumentParser(description="Oh-My-Security: 你的终端安全瑞士军刀")
+    subparsers = parser.add_subparsers(dest="command", help="可用命令")
+
+    # Command: case
+    case_parser = subparsers.add_parser("case", help="从 300+ 知识库中检索安全案例")
+    case_parser.add_argument("query", type=str, help="检索关键字 (如 '薅羊毛', '越权')")
+    case_parser.add_argument("--limit", type=int, default=3, help="返回数量限制")
+
+    # Command: cvss
+    cvss_parser = subparsers.add_parser("cvss", help="计算漏洞 CVSS 分数 (极简版)")
+    cvss_parser.add_argument("-av", choices=["N", "A", "L", "P"], required=True, help="Attack Vector (N,A,L,P)")
+    cvss_parser.add_argument("-ac", choices=["L", "H"], required=True, help="Attack Complexity (L,H)")
+    cvss_parser.add_argument("-pr", choices=["N", "L", "H"], required=True, help="Privileges Required (N,L,H)")
+    cvss_parser.add_argument("-ui", choices=["N", "R"], required=True, help="User Interaction (N,R)")
+    cvss_parser.add_argument("-s", choices=["U", "C"], default="U", help="Scope (U,C)")
+    cvss_parser.add_argument("-c", choices=["H", "L", "N"], required=True, help="Confidentiality (H,L,N)")
+    cvss_parser.add_argument("-i", choices=["H", "L", "N"], required=True, help="Integrity (H,L,N)")
+    cvss_parser.add_argument("-a", choices=["H", "L", "N"], required=True, help="Availability (H,L,N)")
+
+    args = parser.parse_args()
+
+    if args.command is None:
+        print_logo()
+        parser.print_help()
+        sys.exit(1)
+
+    if args.command == "case":
+        retriever = SecurityKnowledgeRetriever()
+        hits = retriever.search(args.query, category="cases", limit=args.limit)
+        
+        if console:
+            if not hits:
+                console.print(f"[yellow]未找到关于 '{args.query}' 的案例。[/yellow]")
+                return
+                
+            table = Table(title=f"检索结果: '{args.query}'")
+            table.add_column("威胁类型", style="cyan", no_wrap=True)
+            table.add_column("案例名称", style="magenta")
+            table.add_column("路径", style="green")
+            
+            for hit in hits:
+                table.add_row(hit['threat_type'], hit['title'], hit['path'])
+            console.print(table)
+            console.print("\n[dim]提示: 你可以使用 `cat <路径>` 查看详细的 Markdown 报告。[/dim]")
+        else:
+            for hit in hits:
+                print(f"- [{hit['threat_type']}] {hit['title']} \n  -> {hit['path']}")
+
+    elif args.command == "cvss":
+        score = CVSSCalculator.calculate(args.av, args.ac, args.pr, args.ui, args.s, args.c, args.i, args.a)
+        if console:
+            color = "red" if score >= 7.0 else ("yellow" if score >= 4.0 else "green")
+            console.print(f"\n[bold]CVSS 3.1 预估基础分:[/bold] [{color}]{score}[/{color}]")
+        else:
+            print(f"\nCVSS 3.1 预估基础分: {score}")
+
+if __name__ == "__main__":
+    main()

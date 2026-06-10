@@ -1,0 +1,2306 @@
+[
+  {
+    "title": "某头部电商平台“双十一”薅羊毛对抗案例",
+    "domain": "业务安全 (Bizsec)",
+    "threat_type": "营销反欺诈 / 薅羊毛 (Wool-Pulling)",
+    "path": "knowledge/cases/china/bizsec-wool-pulling-case.md"
+  },
+  {
+    "title": "某出行巨头数据安全合规处罚案例复盘",
+    "domain": "数据安全 (Data Security)",
+    "threat_type": "违规收集个人信息 / 影响国家数据安全",
+    "path": "knowledge/cases/china/data-security-didi-case.md"
+  },
+  {
+    "title": "Log4j2 远程代码执行漏洞 (Log4Shell) 应急响应复盘",
+    "domain": "信息安全 (Infosec)",
+    "threat_type": "供应链安全 / 远程代码执行 (RCE)",
+    "path": "knowledge/cases/china/infosec-log4j2-case.md"
+  },
+  {
+    "title": "国内某头部 AI 助手 Prompt Injection 绕过案例",
+    "domain": "AI 安全",
+    "threat_type": "提示词注入 (Prompt Injection) / 内容审核绕过",
+    "path": "knowledge/cases/china/ai-prompt-injection-case.md"
+  },
+  {
+    "title": "黑客利用大模型定制化生成高隐蔽性钓鱼邮件与社工脚本",
+    "domain": "AI 安全",
+    "threat_type": "社会工程学攻击 / 大模型滥用",
+    "path": "knowledge/cases/vertical/aisec/07-content-safety/03-黑客利用大模型定制化生成高隐蔽性钓鱼邮件与社工脚本.md"
+  },
+  {
+    "title": "AIGC 数字水印擦除：破坏模型溯源与版权保护机制",
+    "domain": "AI 安全",
+    "threat_type": "水印攻击 / 溯源破坏",
+    "path": "knowledge/cases/vertical/aisec/07-content-safety/08-aigc-数字水印擦除：破坏模型溯源与版权保护机制.md"
+  },
+  {
+    "title": "恶意人员利用 AI 编程助手自动化生成免杀木马与 Payload",
+    "domain": "AI 安全",
+    "threat_type": "恶意代码生成 / 大模型滥用",
+    "path": "knowledge/cases/vertical/aisec/07-content-safety/06-恶意人员利用-ai-编程助手自动化生成免杀木马与-payload.md"
+  },
+  {
+    "title": "突破大模型伦理限制：数据投毒引发特定群体仇恨言论输出",
+    "domain": "AI 安全",
+    "threat_type": "数据投毒 / 偏见与仇恨言论输出",
+    "path": "knowledge/cases/vertical/aisec/07-content-safety/07-突破大模型伦理限制：数据投毒引发特定群体仇恨言论输出.md"
+  },
+  {
+    "title": "多模态大模型越狱攻击：绕过安全护栏生成暴恐违禁图片",
+    "domain": "AI 安全",
+    "threat_type": "越狱攻击 (Jailbreak) / 内容安全",
+    "path": "knowledge/cases/vertical/aisec/07-content-safety/04-多模态大模型越狱攻击：绕过安全护栏生成暴恐违禁图片.md"
+  },
+  {
+    "title": "基于 LLM 的社交机器人网络（Botnet）实施政治选举干预",
+    "domain": "AI 安全",
+    "threat_type": "虚假信息活动 (Disinformation) / 认知对抗",
+    "path": "knowledge/cases/vertical/aisec/07-content-safety/09-基于-llm-的社交机器人网络（botnet）实施政治选举干预.md"
+  },
+  {
+    "title": "基于 Deepfake 深度伪造视频绕过金融机构人脸识别活体检测",
+    "domain": "AI 安全",
+    "threat_type": "深度伪造 (Deepfake) / 生物特征欺骗",
+    "path": "knowledge/cases/vertical/aisec/07-content-safety/01-基于-deepfake-深度伪造视频绕过金融机构人脸识别活体检测.md"
+  },
+  {
+    "title": "AIGC 大规模生成定向虚假新闻操纵股市舆情",
+    "domain": "AI 安全",
+    "threat_type": "内容滥用 / 认知安全",
+    "path": "knowledge/cases/vertical/aisec/07-content-safety/02-aigc-大规模生成定向虚假新闻操纵股市舆情.md"
+  },
+  {
+    "title": "AI 语音合成 (VITS) 克隆 CEO 声音实施财务欺诈",
+    "domain": "AI 安全",
+    "threat_type": "深度伪造 (Deepfake) / 音频合成",
+    "path": "knowledge/cases/vertical/aisec/07-content-safety/05-ai-语音合成-vits-克隆-ceo-声音实施财务欺诈.md"
+  },
+  {
+    "title": "医疗健康领域 AI 问答幻觉（Hallucination）引发的致命误导风险",
+    "domain": "AI 安全",
+    "threat_type": "模型幻觉 (Hallucination) / 关键领域安全",
+    "path": "knowledge/cases/vertical/aisec/07-content-safety/10-医疗健康领域-ai-问答幻觉（hallucination）引发的致命误导风险.md"
+  },
+  {
+    "title": "[基于 RAG 的内部知识库提示词混淆导致跨租户数据泄露]",
+    "domain": "AI 安全 / LLM 业务逻辑安全",
+    "threat_type": "跨租户数据泄露 / RAG 内容注入",
+    "path": "knowledge/cases/vertical/aisec/06-llm-logic/03-基于-rag-的内部知识库提示词混淆导致跨租户数据泄露.md"
+  },
+  {
+    "title": "[财务分析 Agent 角色混淆与上下文截断篡改核心核算公式]",
+    "domain": "AI 安全 / LLM 业务逻辑安全",
+    "threat_type": "角色边界混淆 / 上下文溢出逻辑篡改",
+    "path": "knowledge/cases/vertical/aisec/06-llm-logic/08-财务分析-agent-角色混淆与上下文截断篡改核心核算公式.md"
+  },
+  {
+    "title": "[基于 Markdown 渲染与外带请求的 LLM 盲注数据窃取]",
+    "domain": "AI 安全 / LLM 业务逻辑安全",
+    "threat_type": "数据外带 (Data Exfiltration) / 跨模态高级盲注",
+    "path": "knowledge/cases/vertical/aisec/06-llm-logic/09-基于-markdown-渲染与外带请求的-llm-盲注数据窃取.md"
+  },
+  {
+    "title": "[多模态大模型视觉通道隐写指令注入攻击绕过文本防御]",
+    "domain": "AI 安全 / LLM 业务逻辑安全",
+    "threat_type": "跨模态融合漏洞注入 / 多模态视觉通道指令劫持",
+    "path": "knowledge/cases/vertical/aisec/06-llm-logic/10-多模态大模型视觉通道隐写指令注入攻击绕过文本防御.md"
+  },
+  {
+    "title": "[编码助手工具链组合逻辑漏洞实现执行沙箱容器 RCE]",
+    "domain": "AI 安全 / LLM 业务逻辑安全",
+    "threat_type": "逻辑漏洞利用链组合 / 隔离沙箱逃逸 RCE",
+    "path": "knowledge/cases/vertical/aisec/06-llm-logic/06-编码助手工具链组合逻辑漏洞实现执行沙箱容器-rce.md"
+  },
+  {
+    "title": "[LLM 审查引擎绕过生成恶意勒索与钓鱼邮件模板]",
+    "domain": "AI 安全 / LLM 业务逻辑安全",
+    "threat_type": "越狱攻击 (Jailbreak) / 安全护栏盲区绕过",
+    "path": "knowledge/cases/vertical/aisec/06-llm-logic/04-llm-审查引擎绕过生成恶意勒索与钓鱼邮件模板.md"
+  },
+  {
+    "title": "[简历解析助手间接提示词注入控制模型输出]",
+    "domain": "AI 安全 / LLM 业务逻辑安全",
+    "threat_type": "间接提示词注入 (Indirect Prompt Injection)",
+    "path": "knowledge/cases/vertical/aisec/06-llm-logic/02-简历解析助手间接提示词注入控制模型输出.md"
+  },
+  {
+    "title": "[智能客服系统遭遇指令劫持导致系统后门提示词泄露]",
+    "domain": "AI 安全 / LLM 业务逻辑安全",
+    "threat_type": "提示词泄露 (Prompt Leaking) / 指令劫持",
+    "path": "knowledge/cases/vertical/aisec/06-llm-logic/05-智能客服系统遭遇指令劫持导致系统后门提示词泄露.md"
+  },
+  {
+    "title": "[Agent 工具调用越权执行敏感数据库未授权查询]",
+    "domain": "AI 安全 / LLM 业务逻辑安全",
+    "threat_type": "工具调用越权 (Tool Use Authorization) / 数据未授权查询",
+    "path": "knowledge/cases/vertical/aisec/06-llm-logic/01-agent-工具调用越权执行敏感数据库未授权查询.md"
+  },
+  {
+    "title": "[翻译机器人基于小语种混淆的指令越权与频率限制绕过]",
+    "domain": "AI 安全 / LLM 业务逻辑安全",
+    "threat_type": "高阶语义混淆指令注入 / 逻辑频率绕过",
+    "path": "knowledge/cases/vertical/aisec/06-llm-logic/07-翻译机器人基于小语种混淆的指令越权与频率限制绕过.md"
+  },
+  {
+    "title": "案例 10：少样本示例（Few-shot）污染导致逻辑绕过",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/aisec/01-prompt-injection/10-案例-10：少样本示例（few-shot）污染导致逻辑绕过.md"
+  },
+  {
+    "title": "案例 02：角色扮演越狱导致系统级提示词泄露",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/aisec/01-prompt-injection/02-案例-02：角色扮演越狱导致系统级提示词泄露.md"
+  },
+  {
+    "title": "案例 03：负载分割（Payload Splitting）绕过客服安全策略",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/aisec/01-prompt-injection/03-案例-03：负载分割（payload-splitting）绕过客服安全策略.md"
+  },
+  {
+    "title": "案例 01：基于网页浏览代理的间接提示词注入攻击",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/aisec/01-prompt-injection/01-案例-01：基于网页浏览代理的间接提示词注入攻击.md"
+  },
+  {
+    "title": "案例 04：RAG 知识库投毒引发的精准提示词注入",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/aisec/01-prompt-injection/04-案例-04：rag-知识库投毒引发的精准提示词注入.md"
+  },
+  {
+    "title": "案例 05：多语言与小语种翻译绕过大模型安全拦截",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/aisec/01-prompt-injection/05-案例-05：多语言与小语种翻译绕过大模型安全拦截.md"
+  },
+  {
+    "title": "案例 09：多模态图片 EXIF 元数据导致隐蔽注入",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/aisec/01-prompt-injection/09-案例-09：多模态图片-exif-元数据导致隐蔽注入.md"
+  },
+  {
+    "title": "案例 08：代理机器人递归提示词注入导致拒绝服务（DoS）",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/aisec/01-prompt-injection/08-案例-08：代理机器人递归提示词注入导致拒绝服务（dos）.md"
+  },
+  {
+    "title": "案例 07：Base64 等编码方式绕过输入安全防护",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/aisec/01-prompt-injection/07-案例-07：base64-等编码方式绕过输入安全防护.md"
+  },
+  {
+    "title": "案例 06：HR简历解析机器人不可见文本注入",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/aisec/01-prompt-injection/06-案例-06：hr简历解析机器人不可见文本注入.md"
+  },
+  {
+    "title": "[自然语言大模型预训练阶段的代码隐蔽后门植入]",
+    "domain": "AI 安全",
+    "threat_type": "Pre-training Backdoor Attack (预训练后门攻击)",
+    "path": "knowledge/cases/vertical/aisec/04-training-security/03-自然语言大模型预训练阶段的代码隐蔽后门植入.md"
+  },
+  {
+    "title": "[联邦学习框架下的女巫攻击与全局模型毒化]",
+    "domain": "AI 安全",
+    "threat_type": "Sybil Attack / Model Poisoning (女巫攻击与模型毒化)",
+    "path": "knowledge/cases/vertical/aisec/04-training-security/02-联邦学习框架下的女巫攻击与全局模型毒化.md"
+  },
+  {
+    "title": "[恶意广告软件通过标签翻转瘫痪在线广告拦截AI]",
+    "domain": "AI 安全",
+    "threat_type": "Label Flipping Data Poisoning (标签翻转投毒)",
+    "path": "knowledge/cases/vertical/aisec/04-training-security/08-恶意广告软件通过标签翻转瘫痪在线广告拦截ai.md"
+  },
+  {
+    "title": "[利用硬件漏洞在推理期篡改模型权重的比特翻转攻击]",
+    "domain": "AI 安全",
+    "threat_type": "Bit-Flip Attack via Rowhammer (硬件级权重比特篡改)",
+    "path": "knowledge/cases/vertical/aisec/04-training-security/09-利用硬件漏洞在推理期篡改模型权重的比特翻转攻击.md"
+  },
+  {
+    "title": "[医学自然语言处理模型遭遇数据字典投毒引发诊断误导]",
+    "domain": "AI 安全",
+    "threat_type": "Dictionary / Knowledge Base Poisoning (知识库与字典投毒)",
+    "path": "knowledge/cases/vertical/aisec/04-training-security/07-医学自然语言处理模型遭遇数据字典投毒引发诊断误导.md"
+  },
+  {
+    "title": "[利用无标签数据的对比学习数据污染事件]",
+    "domain": "AI 安全",
+    "threat_type": "Data Poisoning in Self-Supervised Learning (自监督学习投毒)",
+    "path": "knowledge/cases/vertical/aisec/04-training-security/05-利用无标签数据的对比学习数据污染事件.md"
+  },
+  {
+    "title": "[MaaS平台模型微调阶段的模型提取窃取攻击]",
+    "domain": "AI 安全",
+    "threat_type": "Model Extraction / Stealing (模型提取与窃取)",
+    "path": "knowledge/cases/vertical/aisec/04-training-security/06-maas平台模型微调阶段的模型提取窃取攻击.md"
+  },
+  {
+    "title": "[众包数据集污染导致自动驾驶模型对限速牌误判的后门攻击]",
+    "domain": "AI 安全",
+    "threat_type": "Data Poisoning / Backdoor Attack (数据投毒与后门)",
+    "path": "knowledge/cases/vertical/aisec/04-training-security/01-众包数据集污染导致自动驾驶模型对限速牌误判的后门攻击.md"
+  },
+  {
+    "title": "[生成式大模型对齐微调阶段的奖励模型劫持现象]",
+    "domain": "AI 安全",
+    "threat_type": "Reward Hacking in RLHF (奖励劫持与对齐崩溃)",
+    "path": "knowledge/cases/vertical/aisec/04-training-security/10-生成式大模型对齐微调阶段的奖励模型劫持现象.md"
+  },
+  {
+    "title": "[人脸识别模型训练过程中的隐私成员推理攻击]",
+    "domain": "AI 安全",
+    "threat_type": "Membership Inference Attack (成员推理攻击)",
+    "path": "knowledge/cases/vertical/aisec/04-training-security/04-人脸识别模型训练过程中的隐私成员推理攻击.md"
+  },
+  {
+    "title": "[通过预训练模型微调服务实现的代码执行与逃逸]",
+    "domain": "AI 安全",
+    "threat_type": "供应链服务滥用 / 沙箱逃逸",
+    "path": "knowledge/cases/vertical/aisec/09-supply-chain/04-通过预训练模型微调服务实现的代码执行与逃逸.md"
+  },
+  {
+    "title": "[第三方 AI 开发工具链插件的恶意更新]",
+    "domain": "AI 安全",
+    "threat_type": "工具链供应链攻击",
+    "path": "knowledge/cases/vertical/aisec/09-supply-chain/05-第三方-ai-开发工具链插件的恶意更新.md"
+  },
+  {
+    "title": "[大语言模型提示词模板供应链泄露]",
+    "domain": "AI 安全",
+    "threat_type": "资产泄露 / 供应链数据安全",
+    "path": "knowledge/cases/vertical/aisec/09-supply-chain/10-大语言模型提示词模板供应链泄露.md"
+  },
+  {
+    "title": "[基础镜像后门导致 AI 训练集群算力被盗用]",
+    "domain": "AI 安全",
+    "threat_type": "基础镜像污染 / 挖矿劫持",
+    "path": "knowledge/cases/vertical/aisec/09-supply-chain/07-基础镜像后门导致-ai-训练集群算力被盗用.md"
+  },
+  {
+    "title": "[开源数据集投毒引发的模型后门攻击]",
+    "domain": "AI 安全",
+    "threat_type": "数据投毒 / 后门攻击",
+    "path": "knowledge/cases/vertical/aisec/09-supply-chain/03-开源数据集投毒引发的模型后门攻击.md"
+  },
+  {
+    "title": "[模型量化转换工具引入的安全漏洞]",
+    "domain": "AI 安全",
+    "threat_type": "依赖库漏洞利用",
+    "path": "knowledge/cases/vertical/aisec/09-supply-chain/08-模型量化转换工具引入的安全漏洞.md"
+  },
+  {
+    "title": "[Hugging Face 恶意模型投毒与供应链代码执行攻击]",
+    "domain": "AI 安全",
+    "threat_type": "供应链投毒 / 恶意代码执行",
+    "path": "knowledge/cases/vertical/aisec/09-supply-chain/01-hugging-face-恶意模型投毒与供应链代码执行攻击.md"
+  },
+  {
+    "title": "[PyPI 机器学习生态依赖包投毒与凭证窃取]",
+    "domain": "AI 安全",
+    "threat_type": "依赖项投毒 / 凭据窃取",
+    "path": "knowledge/cases/vertical/aisec/09-supply-chain/02-pypi-机器学习生态依赖包投毒与凭证窃取.md"
+  },
+  {
+    "title": "[AI CI/CD 流水线中模型被恶意篡改事件]",
+    "domain": "AI 安全",
+    "threat_type": "CI/CD 流水线攻击 / 产物篡改",
+    "path": "knowledge/cases/vertical/aisec/09-supply-chain/06-ai-cicd-流水线中模型被恶意篡改事件.md"
+  },
+  {
+    "title": "[供应商 API 响应污染导致的应用拒绝服务]",
+    "domain": "AI 安全",
+    "threat_type": "第三方依赖故障 / 服务可用性破坏",
+    "path": "knowledge/cases/vertical/aisec/09-supply-chain/09-供应商-api-响应污染导致的应用拒绝服务.md"
+  },
+  {
+    "title": "[LLM 产生严重幻觉导致企业声誉及法律责任受损]",
+    "domain": "AI 治理与合规",
+    "threat_type": "模型幻觉 / 虚假信息传播",
+    "path": "knowledge/cases/vertical/aisec/10-governance/07-llm-产生严重幻觉导致企业声誉及法律责任受损.md"
+  },
+  {
+    "title": "[生成式 AI 生成内容侵犯版权引发的集体诉讼]",
+    "domain": "AI 治理与合规",
+    "threat_type": "知识产权侵权 / 法律诉讼",
+    "path": "knowledge/cases/vertical/aisec/10-governance/02-生成式-ai-生成内容侵犯版权引发的集体诉讼.md"
+  },
+  {
+    "title": "[影子 AI 导致的跨国企业数据主权违规]",
+    "domain": "AI 治理与合规",
+    "threat_type": "影子 IT / 数据主权合规危机",
+    "path": "knowledge/cases/vertical/aisec/10-governance/10-影子-ai-导致的跨国企业数据主权违规.md"
+  },
+  {
+    "title": "[未声明 AI 自动生成内容引发的平台封禁]",
+    "domain": "AI 治理与合规",
+    "threat_type": "违规使用 / 平台规则冲突",
+    "path": "knowledge/cases/vertical/aisec/10-governance/08-未声明-ai-自动生成内容引发的平台封禁.md"
+  },
+  {
+    "title": "[企业自部署模型由于黑盒效应引发审计失败]",
+    "domain": "AI 治理与合规",
+    "threat_type": "算法不可解释性 / 合规审计失败",
+    "path": "knowledge/cases/vertical/aisec/10-governance/06-企业自部署模型由于黑盒效应引发审计失败.md"
+  },
+  {
+    "title": "[某科技公司员工将商业机密输入 ChatGPT 导致泄露]",
+    "domain": "AI 治理与合规",
+    "threat_type": "敏感数据外泄 / 影子 AI",
+    "path": "knowledge/cases/vertical/aisec/10-governance/01-某科技公司员工将商业机密输入-chatgpt-导致泄露.md"
+  },
+  {
+    "title": "[自动驾驶算法引发严重事故与责任界定困境]",
+    "domain": "AI 治理与合规",
+    "threat_type": "算法失控 / 法律责任归属",
+    "path": "knowledge/cases/vertical/aisec/10-governance/09-自动驾驶算法引发严重事故与责任界定困境.md"
+  },
+  {
+    "title": "[医疗诊断 AI 算法偏见导致的监管介入]",
+    "domain": "AI 治理与合规",
+    "threat_type": "算法偏见 / 伦理合规危机",
+    "path": "knowledge/cases/vertical/aisec/10-governance/03-医疗诊断-ai-算法偏见导致的监管介入.md"
+  },
+  {
+    "title": "[深度伪造技术被用于大规模电信诈骗]",
+    "domain": "AI 治理与合规",
+    "threat_type": "Deepfake 滥用 / 社会工程学",
+    "path": "knowledge/cases/vertical/aisec/10-governance/04-深度伪造技术被用于大规模电信诈骗.md"
+  },
+  {
+    "title": "[违反 GDPR 被勒令停止服务的生成式 AI 平台]",
+    "domain": "AI 治理与合规",
+    "threat_type": "隐私违规 / 数据跨境与被遗忘权冲突",
+    "path": "knowledge/cases/vertical/aisec/10-governance/05-违反-gdpr-被勒令停止服务的生成式-ai-平台.md"
+  },
+  {
+    "title": "AI 数据标注外包平台 API 漏洞导致海量隐私数据被窃取",
+    "domain": "AI 安全",
+    "threat_type": "基础设施安全 / API 安全 / 隐私数据泄露",
+    "path": "knowledge/cases/vertical/aisec/08-ai-infra/08-ai-数据标注外包平台-api-漏洞导致海量隐私数据被窃取.md"
+  },
+  {
+    "title": "针对模型推理服务 (Triton/TensorRT) 的拒绝服务与资源耗尽攻击",
+    "domain": "AI 安全",
+    "threat_type": "基础设施安全 / 拒绝服务 (DoS) / 推理服务安全",
+    "path": "knowledge/cases/vertical/aisec/08-ai-infra/06-针对模型推理服务-tritontensorrt-的拒绝服务与资源耗尽攻击.md"
+  },
+  {
+    "title": "分布式训练集群内部通信未加密导致模型权重与梯度窃听",
+    "domain": "AI 安全",
+    "threat_type": "基础设施安全 / 中间人攻击 / 知识产权窃取",
+    "path": "knowledge/cases/vertical/aisec/08-ai-infra/09-分布式训练集群内部通信未加密导致模型权重与梯度窃听.md"
+  },
+  {
+    "title": "机器学习平台 (MLOps) 容器逃逸与 Kubernetes 集群提权攻击",
+    "domain": "AI 安全",
+    "threat_type": "基础设施安全 / 容器逃逸 / 权限提升",
+    "path": "knowledge/cases/vertical/aisec/08-ai-infra/01-机器学习平台-mlops-容器逃逸与-kubernetes-集群提权攻击.md"
+  },
+  {
+    "title": "利用暴露的 Jupyter Notebook 远程代码执行控制 AI 训练节点",
+    "domain": "AI 安全",
+    "threat_type": "基础设施安全 / 远程代码执行 (RCE) / 未授权访问",
+    "path": "knowledge/cases/vertical/aisec/08-ai-infra/03-利用暴露的-jupyter-notebook-远程代码执行控制-ai-训练节点.md"
+  },
+  {
+    "title": "高价值 GPU 算力集群遭未授权访问劫持用于恶意加密货币挖矿",
+    "domain": "AI 安全",
+    "threat_type": "基础设施安全 / 资源滥用 / 恶意挖矿",
+    "path": "knowledge/cases/vertical/aisec/08-ai-infra/04-高价值-gpu-算力集群遭未授权访问劫持用于恶意加密货币挖矿.md"
+  },
+  {
+    "title": "AI 供应链投毒：篡改 Hugging Face 开源模型代码实现后门植入",
+    "domain": "AI 安全",
+    "threat_type": "供应链安全 / 模型投毒 / 恶意代码执行",
+    "path": "knowledge/cases/vertical/aisec/08-ai-infra/05-ai-供应链投毒：篡改-hugging-face-开源模型代码实现后门植入.md"
+  },
+  {
+    "title": "AI 模型训练数据集 Amazon S3 存储桶未授权访问导致大规模数据泄露",
+    "domain": "AI 安全",
+    "threat_type": "基础设施安全 / 数据泄露 / 云安全配置错误",
+    "path": "knowledge/cases/vertical/aisec/08-ai-infra/02-ai-模型训练数据集-amazon-s3-存储桶未授权访问导致大规模数据泄露.md"
+  },
+  {
+    "title": "影子 AI (Shadow AI)：员工私自搭建不受控 AI 基础设施带来的内部威胁",
+    "domain": "AI 安全",
+    "threat_type": "基础设施安全 / 影子 IT / 数据合规风险",
+    "path": "knowledge/cases/vertical/aisec/08-ai-infra/10-影子-ai-shadow-ai：员工私自搭建不受控-ai-基础设施带来的内部威胁.md"
+  },
+  {
+    "title": "针对深度学习框架 (PyTorch) 反序列化漏洞的远程代码执行攻击",
+    "domain": "AI 安全",
+    "threat_type": "基础设施安全 / 反序列化漏洞 / 远程代码执行",
+    "path": "knowledge/cases/vertical/aisec/08-ai-infra/07-针对深度学习框架-pytorch-反序列化漏洞的远程代码执行攻击.md"
+  },
+  {
+    "title": "案例分析：Embedding反转攻击恢复向量数据库中的机密文档",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/aisec/02-data-privacy/09-案例分析：embedding反转攻击恢复向量数据库中的机密文档.md"
+  },
+  {
+    "title": "案例分析：针对代码生成大模型的成员推理攻击",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/aisec/02-data-privacy/02-案例分析：针对代码生成大模型的成员推理攻击.md"
+  },
+  {
+    "title": "案例分析：医疗向量数据库访问控制失效暴露大量病患隐私",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/aisec/02-data-privacy/05-案例分析：医疗向量数据库访问控制失效暴露大量病患隐私.md"
+  },
+  {
+    "title": "案例分析：企业RAG系统多租户上下文污染导致财务数据泄露",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/aisec/02-data-privacy/01-案例分析：企业rag系统多租户上下文污染导致财务数据泄露.md"
+  },
+  {
+    "title": "案例分析：模型逆向攻击（Model Inversion）榨取细分医疗大模型PII数据",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/aisec/02-data-privacy/10-案例分析：模型逆向攻击（model-inversion）榨取细分医疗大模型pii数据.md"
+  },
+  {
+    "title": "案例分析：无过滤用户提示词导致企业知识库模型被数据投毒",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/aisec/02-data-privacy/06-案例分析：无过滤用户提示词导致企业知识库模型被数据投毒.md"
+  },
+  {
+    "title": "案例分析：大模型训练数据记忆效应导致API Key硬编码泄露",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/aisec/02-data-privacy/04-案例分析：大模型训练数据记忆效应导致api-key硬编码泄露.md"
+  },
+  {
+    "title": "案例分析：上下文学习提示词泄露暴露核心业务逻辑与后端数据",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/aisec/02-data-privacy/07-案例分析：上下文学习提示词泄露暴露核心业务逻辑与后端数据.md"
+  },
+  {
+    "title": "案例分析：大模型多轮会话记忆系统重放攻击导致用户隐私串接",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/aisec/02-data-privacy/08-案例分析：大模型多轮会话记忆系统重放攻击导致用户隐私串接.md"
+  },
+  {
+    "title": "案例分析：客服机器人的对抗性提示词提取PII数据漏洞",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/aisec/02-data-privacy/03-案例分析：客服机器人的对抗性提示词提取pii数据漏洞.md"
+  },
+  {
+    "title": "[人脸识别门禁系统遭遇眼镜级3D打印对抗攻击]",
+    "domain": "AI 安全",
+    "threat_type": "Physical Adversarial Attack (物理对抗攻击)",
+    "path": "knowledge/cases/vertical/aisec/03-model-robustness/05-人脸识别门禁系统遭遇眼镜级3d打印对抗攻击.md"
+  },
+  {
+    "title": "[恶意软件检测引擎通过特征规避技术的盲区逃逸]",
+    "domain": "AI 安全",
+    "threat_type": "Evasion Attack on Malware Detection (特征规避逃逸)",
+    "path": "knowledge/cases/vertical/aisec/03-model-robustness/08-恶意软件检测引擎通过特征规避技术的盲区逃逸.md"
+  },
+  {
+    "title": "[社交平台内容审核大模型提示泄漏与规则绕过]",
+    "domain": "AI 安全",
+    "threat_type": "Prompt Leaking & Prompt Injection (提示泄漏与注入)",
+    "path": "knowledge/cases/vertical/aisec/03-model-robustness/07-社交平台内容审核大模型提示泄漏与规则绕过.md"
+  },
+  {
+    "title": "[大型语言模型基于特定前缀的深层越狱攻击事件]",
+    "domain": "AI 安全",
+    "threat_type": "Jailbreak / Prompt Injection (越狱与提示注入)",
+    "path": "knowledge/cases/vertical/aisec/03-model-robustness/02-大型语言模型基于特定前缀的深层越狱攻击事件.md"
+  },
+  {
+    "title": "[NLP文本分类模型词汇级对抗替换攻击]",
+    "domain": "AI 安全",
+    "threat_type": "Text Adversarial Attack (文本同义词对抗)",
+    "path": "knowledge/cases/vertical/aisec/03-model-robustness/09-nlp文本分类模型词汇级对抗替换攻击.md"
+  },
+  {
+    "title": "[基于FGSM梯度的金融风控反欺诈模型逃逸攻击]",
+    "domain": "AI 安全",
+    "threat_type": "Adversarial Evasion Attack (对抗逃逸攻击)",
+    "path": "knowledge/cases/vertical/aisec/03-model-robustness/03-基于fgsm梯度的金融风控反欺诈模型逃逸攻击.md"
+  },
+  {
+    "title": "[语音识别助手频域对抗音频注入隐蔽指令攻击]",
+    "domain": "AI 安全",
+    "threat_type": "Audio Adversarial Attack (音频对抗攻击)",
+    "path": "knowledge/cases/vertical/aisec/03-model-robustness/04-语音识别助手频域对抗音频注入隐蔽指令攻击.md"
+  },
+  {
+    "title": "[视频监控目标检测系统的C&W级对抗迷彩隐身衣]",
+    "domain": "AI 安全",
+    "threat_type": "Adversarial Camouflage (物理对抗迷彩)",
+    "path": "knowledge/cases/vertical/aisec/03-model-robustness/10-视频监控目标检测系统的c&w级对抗迷彩隐身衣.md"
+  },
+  {
+    "title": "[自动驾驶视觉识别系统物理世界对抗补丁欺骗事件]",
+    "domain": "AI 安全",
+    "threat_type": "Adversarial Patch (对抗补丁攻击)",
+    "path": "knowledge/cases/vertical/aisec/03-model-robustness/01-自动驾驶视觉识别系统物理世界对抗补丁欺骗事件.md"
+  },
+  {
+    "title": "[医疗影像诊断系统遭受PGD对抗扰动导致误诊事件]",
+    "domain": "AI 安全",
+    "threat_type": "Adversarial Examples in Healthcare (医疗领域对抗样本)",
+    "path": "knowledge/cases/vertical/aisec/03-model-robustness/06-医疗影像诊断系统遭受pgd对抗扰动导致误诊事件.md"
+  },
+  {
+    "title": "[模型热更新接口滥用导致业务逻辑被植入后门模型]",
+    "domain": "AI 安全 / 模型部署安全",
+    "threat_type": "接口滥用 / 恶意模型篡改",
+    "path": "knowledge/cases/vertical/aisec/05-deployment/08-模型热更新接口滥用导致业务逻辑被植入后门模型.md"
+  },
+  {
+    "title": "[vLLM API 未授权访问导致模型权重与推断数据泄露]",
+    "domain": "AI 安全 / 模型部署安全",
+    "threat_type": "未授权访问 / 数据泄露",
+    "path": "knowledge/cases/vertical/aisec/05-deployment/01-vllm-api-未授权访问导致模型权重与推断数据泄露.md"
+  },
+  {
+    "title": "[Ray Serve 分布式推理集群无鉴权导致的计算资源盗用]",
+    "domain": "AI 安全 / 模型部署安全",
+    "threat_type": "未授权访问 / 计算资源滥用",
+    "path": "knowledge/cases/vertical/aisec/05-deployment/06-ray-serve-分布式推理集群无鉴权导致的计算资源盗用.md"
+  },
+  {
+    "title": "[恶意 Pickle 序列化文件上传导致推理节点远程代码执行]",
+    "domain": "AI 安全 / 模型部署安全",
+    "threat_type": "反序列化漏洞 / RCE",
+    "path": "knowledge/cases/vertical/aisec/05-deployment/02-恶意-pickle-序列化文件上传导致推理节点远程代码执行.md"
+  },
+  {
+    "title": "[基于共享 GPU 环境的侧信道攻击窃取跨租户推断数据]",
+    "domain": "AI 安全 / 模型部署安全",
+    "threat_type": "侧信道攻击 / 跨租户数据泄露",
+    "path": "knowledge/cases/vertical/aisec/05-deployment/09-基于共享-gpu-环境的侧信道攻击窃取跨租户推断数据.md"
+  },
+  {
+    "title": "[Ollama 本地部署默认绑定 0.0.0.0 导致网络入侵与算力滥用]",
+    "domain": "AI 安全 / 模型部署安全",
+    "threat_type": "默认配置脆弱 / 算力滥用与未授权访问",
+    "path": "knowledge/cases/vertical/aisec/05-deployment/10-ollama-本地部署默认绑定-0.0.0.0-导致网络入侵与算力滥用.md"
+  },
+  {
+    "title": "[HuggingFace 模型拉取劫持与模型供应链投毒攻击]",
+    "domain": "AI 安全 / 模型部署安全",
+    "threat_type": "供应链安全 / 投毒攻击",
+    "path": "knowledge/cases/vertical/aisec/05-deployment/05-huggingface-模型拉取劫持与模型供应链投毒攻击.md"
+  },
+  {
+    "title": "[AI 预测服务容器逃逸获取物理机 GPU 与宿主机控制权]",
+    "domain": "AI 安全 / 模型部署安全",
+    "threat_type": "容器逃逸 / 权限提升",
+    "path": "knowledge/cases/vertical/aisec/05-deployment/04-ai-预测服务容器逃逸获取物理机-gpu-与宿主机控制权.md"
+  },
+  {
+    "title": "[KServe 部署配置错误导致敏感内部微服务 API 暴露]",
+    "domain": "AI 安全 / 模型部署安全",
+    "threat_type": "敏感接口暴露 / 配置管理失误",
+    "path": "knowledge/cases/vertical/aisec/05-deployment/07-kserve-部署配置错误导致敏感内部微服务-api-暴露.md"
+  },
+  {
+    "title": "[Triton Inference Server 目录穿越加载未经审核的恶意模型]",
+    "domain": "AI 安全 / 模型部署安全",
+    "threat_type": "目录穿越 / 恶意模型加载",
+    "path": "knowledge/cases/vertical/aisec/05-deployment/03-triton-inference-server-目录穿越加载未经审核的恶意模型.md"
+  },
+  {
+    "title": "预售定金欺诈",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/bizsec/02-marketing/20-预售定金欺诈.md"
+  },
+  {
+    "title": "直播间刷人气作弊",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/bizsec/02-marketing/17-直播间刷人气.md"
+  },
+  {
+    "title": "首单优惠套现",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/bizsec/02-marketing/13-首单优惠套现.md"
+  },
+  {
+    "title": "投票灌水欺诈",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/bizsec/02-marketing/18-投票灌水.md"
+  },
+  {
+    "title": "裂变拉新欺诈",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/bizsec/02-marketing/12-referral-fraud.md"
+  },
+  {
+    "title": "积分墙作弊与反欺诈",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/bizsec/02-marketing/16-积分墙作弊.md"
+  },
+  {
+    "title": "阶梯奖励绕过漏洞",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/bizsec/02-marketing/19-阶梯奖励绕过.md"
+  },
+  {
+    "title": "众包刷单攻击",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/bizsec/02-marketing/15-crowdsourcing-attack.md"
+  },
+  {
+    "title": "营销活动薅羊毛",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/bizsec/02-marketing/11-wool-pulling.md"
+  },
+  {
+    "title": "签到任务自动化作弊",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/bizsec/02-marketing/14-签到任务自动化.md"
+  },
+  {
+    "title": "数据导出越权",
+    "domain": "业务安全",
+    "threat_type": "数据导出越权",
+    "path": "knowledge/cases/vertical/bizsec/04-logic/35-数据导出越权.md"
+  },
+  {
+    "title": "某物流平台水平越权改单案",
+    "domain": "业务安全",
+    "threat_type": "越权访问 (IDOR / BOLA)",
+    "path": "knowledge/cases/vertical/bizsec/04-logic/06-某物流平台水平越权改单案.md"
+  },
+  {
+    "title": "某票务系统恶意锁库存勒索案",
+    "domain": "业务安全",
+    "threat_type": "恶意占座 / 逻辑设计缺陷",
+    "path": "knowledge/cases/vertical/bizsec/04-logic/05-某票务系统恶意锁库存勒索案.md"
+  },
+  {
+    "title": "步骤跳过 (Step Skipping)",
+    "domain": "业务安全",
+    "threat_type": "步骤跳过",
+    "path": "knowledge/cases/vertical/bizsec/04-logic/33-step-skipping.md"
+  },
+  {
+    "title": "某头部电商平台支付金额篡改案",
+    "domain": "业务安全",
+    "threat_type": "支付逻辑漏洞 / 参数篡改",
+    "path": "knowledge/cases/vertical/bizsec/04-logic/01-某头部电商平台支付金额篡改案.md"
+  },
+  {
+    "title": "水平越权 (IDOR)",
+    "domain": "业务安全",
+    "threat_type": "水平越权",
+    "path": "knowledge/cases/vertical/bizsec/04-logic/31-idor.md"
+  },
+  {
+    "title": "越权解绑",
+    "domain": "业务安全",
+    "threat_type": "越权解绑",
+    "path": "knowledge/cases/vertical/bizsec/04-logic/34-越权解绑.md"
+  },
+  {
+    "title": "某外卖平台优惠券无限叠加漏洞",
+    "domain": "业务安全",
+    "threat_type": "业务逻辑漏洞 / 状态流转异常",
+    "path": "knowledge/cases/vertical/bizsec/04-logic/03-某外卖平台优惠券无限叠加漏洞.md"
+  },
+  {
+    "title": "某抢购活动条件竞争提现案",
+    "domain": "业务安全",
+    "threat_type": "并发漏洞 / 条件竞争 (Race Condition)",
+    "path": "knowledge/cases/vertical/bizsec/04-logic/02-某抢购活动条件竞争提现案.md"
+  },
+  {
+    "title": "某出行打车软件邀请码环状刷单套利案",
+    "domain": "业务安全",
+    "threat_type": "黑产欺诈 / 业务流转套利",
+    "path": "knowledge/cases/vertical/bizsec/04-logic/10-某出行打车软件邀请码环状刷单套利案.md"
+  },
+  {
+    "title": "垂直越权",
+    "domain": "业务安全",
+    "threat_type": "垂直越权",
+    "path": "knowledge/cases/vertical/bizsec/04-logic/32-垂直越权.md"
+  },
+  {
+    "title": "订单状态强制修改",
+    "domain": "业务安全",
+    "threat_type": "订单状态强制修改",
+    "path": "knowledge/cases/vertical/bizsec/04-logic/38-订单状态强制修改.md"
+  },
+  {
+    "title": "缓存击穿安全漏洞",
+    "domain": "业务安全",
+    "threat_type": "缓存击穿安全漏洞",
+    "path": "knowledge/cases/vertical/bizsec/04-logic/40-缓存击穿安全漏洞.md"
+  },
+  {
+    "title": "某互金平台短信验证码爆破与复用案",
+    "domain": "业务安全",
+    "threat_type": "认证逻辑缺陷 / 爆破攻击",
+    "path": "knowledge/cases/vertical/bizsec/04-logic/09-某互金平台短信验证码爆破与复用案.md"
+  },
+  {
+    "title": "某SaaS平台密码找回步骤绕过案",
+    "domain": "业务安全",
+    "threat_type": "状态机绕过 / 权限认证漏洞",
+    "path": "knowledge/cases/vertical/bizsec/04-logic/04-某saas平台密码找回步骤绕过案.md"
+  },
+  {
+    "title": "逻辑回退",
+    "domain": "业务安全",
+    "threat_type": "逻辑回退",
+    "path": "knowledge/cases/vertical/bizsec/04-logic/36-逻辑回退.md"
+  },
+  {
+    "title": "二次校验缺失",
+    "domain": "业务安全",
+    "threat_type": "二次校验缺失",
+    "path": "knowledge/cases/vertical/bizsec/04-logic/39-二次校验缺失.md"
+  },
+  {
+    "title": "某企业OA系统财务审批越级案",
+    "domain": "业务安全",
+    "threat_type": "审批流绕过 / 强制浏览漏洞",
+    "path": "knowledge/cases/vertical/bizsec/04-logic/08-某企业oa系统财务审批越级案.md"
+  },
+  {
+    "title": "平行权限绕过",
+    "domain": "业务安全",
+    "threat_type": "平行权限绕过",
+    "path": "knowledge/cases/vertical/bizsec/04-logic/37-平行权限绕过.md"
+  },
+  {
+    "title": "某游戏平台积分充值负数溢出案",
+    "domain": "业务安全",
+    "threat_type": "参数边界异常 / 整数溢出逻辑漏洞",
+    "path": "knowledge/cases/vertical/bizsec/04-logic/07-某游戏平台积分充值负数溢出案.md"
+  },
+  {
+    "title": "景区门票二次转售",
+    "domain": "业务安全",
+    "threat_type": "景区门票二次转售",
+    "path": "knowledge/cases/vertical/bizsec/09-o2o/89-景区门票二次转售.md"
+  },
+  {
+    "title": "刷单入驻",
+    "domain": "业务安全",
+    "threat_type": "刷单入驻",
+    "path": "knowledge/cases/vertical/bizsec/09-o2o/85-刷单入驻.md"
+  },
+  {
+    "title": "限量演出票务黄牛协议级秒杀事件",
+    "domain": "业务安全",
+    "threat_type": "自动化Bot/接口滥用",
+    "path": "knowledge/cases/vertical/bizsec/09-o2o/03-限量演出票务黄牛协议级秒杀事件.md"
+  },
+  {
+    "title": "外卖平台新客补贴羊毛党批量刷单事件",
+    "domain": "业务安全",
+    "threat_type": "营销欺诈/机器人群控",
+    "path": "knowledge/cases/vertical/bizsec/09-o2o/01-外卖平台新客补贴羊毛党批量刷单事件.md"
+  },
+  {
+    "title": "虚假配送 (Ghost Delivery)",
+    "domain": "业务安全",
+    "threat_type": "虚假配送",
+    "path": "knowledge/cases/vertical/bizsec/09-o2o/83-ghost-delivery.md"
+  },
+  {
+    "title": "医美O2O平台拼团拉新裂变欺诈事件",
+    "domain": "业务安全",
+    "threat_type": "并发漏洞/营销作弊",
+    "path": "knowledge/cases/vertical/bizsec/09-o2o/10-医美o2o平台拼团拉新裂变欺诈事件.md"
+  },
+  {
+    "title": "代驾平台司机端越权接单事件",
+    "domain": "业务安全",
+    "threat_type": "越权漏洞(IDOR)/API滥用",
+    "path": "knowledge/cases/vertical/bizsec/09-o2o/07-代驾平台司机端越权接单事件.md"
+  },
+  {
+    "title": "跑腿配送费计算逻辑绕过事件",
+    "domain": "业务安全",
+    "threat_type": "客户端攻防/计算逻辑劫持",
+    "path": "knowledge/cases/vertical/bizsec/09-o2o/09-跑腿配送费计算逻辑绕过事件.md"
+  },
+  {
+    "title": "虚假求助信息",
+    "domain": "业务安全",
+    "threat_type": "虚假求助信息",
+    "path": "knowledge/cases/vertical/bizsec/09-o2o/87-虚假求助信息.md"
+  },
+  {
+    "title": "外卖首单刷单",
+    "domain": "业务安全",
+    "threat_type": "外卖首单刷单",
+    "path": "knowledge/cases/vertical/bizsec/09-o2o/82-外卖首单刷单.md"
+  },
+  {
+    "title": "评价返现劫持",
+    "domain": "业务安全",
+    "threat_type": "评价返现劫持",
+    "path": "knowledge/cases/vertical/bizsec/09-o2o/90-评价返现劫持.md"
+  },
+  {
+    "title": "共享单车私锁/破坏",
+    "domain": "业务安全",
+    "threat_type": "共享单车私锁/破坏",
+    "path": "knowledge/cases/vertical/bizsec/09-o2o/88-共享单车私锁破坏.md"
+  },
+  {
+    "title": "抢票插件 (Ticketer)",
+    "domain": "业务安全",
+    "threat_type": "抢票插件",
+    "path": "knowledge/cases/vertical/bizsec/09-o2o/86-ticketer.md"
+  },
+  {
+    "title": "酒店库存恶意占座",
+    "domain": "业务安全",
+    "threat_type": "酒店库存恶意占座",
+    "path": "knowledge/cases/vertical/bizsec/09-o2o/84-酒店库存恶意占座.md"
+  },
+  {
+    "title": "O2O生鲜电商退款欺诈事件",
+    "domain": "业务安全",
+    "threat_type": "业务逻辑滥用/退款欺诈",
+    "path": "knowledge/cases/vertical/bizsec/09-o2o/06-o2o生鲜电商退款欺诈事件.md"
+  },
+  {
+    "title": "酒店预订接口价格并发篡改事件",
+    "domain": "业务安全",
+    "threat_type": "参数篡改/业务逻辑漏洞",
+    "path": "knowledge/cases/vertical/bizsec/09-o2o/08-酒店预订接口价格并发篡改事件.md"
+  },
+  {
+    "title": "代叫车/优惠单套利",
+    "domain": "业务安全",
+    "threat_type": "代叫车/优惠单套利",
+    "path": "knowledge/cases/vertical/bizsec/09-o2o/81-代叫车优惠单套利.md"
+  },
+  {
+    "title": "网约车平台黑产虚假轨迹骗补事件",
+    "domain": "业务安全",
+    "threat_type": "接口伪造/LBS位置欺骗",
+    "path": "knowledge/cases/vertical/bizsec/09-o2o/02-网约车平台黑产虚假轨迹骗补事件.md"
+  },
+  {
+    "title": "共享单车并发漏洞无限骑行事件",
+    "domain": "业务安全",
+    "threat_type": "并发竞争/逻辑漏洞",
+    "path": "knowledge/cases/vertical/bizsec/09-o2o/05-共享单车并发漏洞无限骑行事件.md"
+  },
+  {
+    "title": "本地生活商户刷榜与信誉操纵事件",
+    "domain": "业务安全",
+    "threat_type": "数据污染/黑灰产水军",
+    "path": "knowledge/cases/vertical/bizsec/09-o2o/04-本地生活商户刷榜与信誉操纵事件.md"
+  },
+  {
+    "title": "0 元下单 (Zero-Dollar Order)",
+    "domain": "业务安全",
+    "threat_type": "0 元下单",
+    "path": "knowledge/cases/vertical/bizsec/03-transaction/22-zero-dollar-order.md"
+  },
+  {
+    "title": "酒店集团预订系统“虚假确认”导致的代订套利",
+    "domain": "业务安全",
+    "threat_type": "异步响应欺骗/业务流程不连贯",
+    "path": "knowledge/cases/vertical/bizsec/03-transaction/09-酒店集团预订系统“虚假确认”导致的代订套利.md"
+  },
+  {
+    "title": "代付欺诈",
+    "domain": "业务安全",
+    "threat_type": "代付欺诈",
+    "path": "knowledge/cases/vertical/bizsec/03-transaction/28-代付欺诈.md"
+  },
+  {
+    "title": "某金融钱包多线程并发退款套利漏洞",
+    "domain": "业务安全",
+    "threat_type": "竞争条件（Race Condition）",
+    "path": "knowledge/cases/vertical/bizsec/03-transaction/02-某金融钱包多线程并发退款套利漏洞.md"
+  },
+  {
+    "title": "分期支付逃废债",
+    "domain": "业务安全",
+    "threat_type": "分期支付逃废债",
+    "path": "knowledge/cases/vertical/bizsec/03-transaction/30-分期支付逃废债.md"
+  },
+  {
+    "title": "某数字货币交易所提币精度“舍入”漏洞案",
+    "domain": "业务安全",
+    "threat_type": "浮点数精度截断/数值溢出",
+    "path": "knowledge/cases/vertical/bizsec/03-transaction/08-某数字货币交易所提币精度“舍入”漏洞案.md"
+  },
+  {
+    "title": "支付网关回调签名绕过导致虚假充值",
+    "domain": "业务安全",
+    "threat_type": "回调报文伪造/签名逻辑缺陷",
+    "path": "knowledge/cases/vertical/bizsec/03-transaction/05-支付网关回调签名绕过导致虚假充值.md"
+  },
+  {
+    "title": "某游戏平台充值绕过：利用“订单快照”修改商品 ID",
+    "domain": "业务安全",
+    "threat_type": "逻辑注入/订单内容篡改",
+    "path": "knowledge/cases/vertical/bizsec/03-transaction/10-某游戏平台充值绕过：利用“订单快照”修改商品-id.md"
+  },
+  {
+    "title": "虚拟货币无限刷取",
+    "domain": "业务安全",
+    "threat_type": "虚拟货币无限刷取",
+    "path": "knowledge/cases/vertical/bizsec/03-transaction/27-虚拟货币无限刷取.md"
+  },
+  {
+    "title": "某众筹平台“循环套现”优惠券逻辑漏洞",
+    "domain": "业务安全",
+    "threat_type": "组合逻辑错误/营销反欺诈",
+    "path": "knowledge/cases/vertical/bizsec/03-transaction/06-某众筹平台“循环套现”优惠券逻辑漏洞.md"
+  },
+  {
+    "title": "游戏虚拟资产交易中的“双花”洗钱案",
+    "domain": "业务安全",
+    "threat_type": "事务一致性失效/资产注入",
+    "path": "knowledge/cases/vertical/bizsec/03-transaction/03-游戏虚拟资产交易中的“双花”洗钱案.md"
+  },
+  {
+    "title": "库存恶意锁定 (Inventory Locking)",
+    "domain": "业务安全",
+    "threat_type": "库存恶意锁定",
+    "path": "knowledge/cases/vertical/bizsec/03-transaction/25-inventory-locking.md"
+  },
+  {
+    "title": "某外卖平台订单越权篡改收货地址案",
+    "domain": "业务安全",
+    "threat_type": "不安全的直接对象引用（IDOR）",
+    "path": "knowledge/cases/vertical/bizsec/03-transaction/04-某外卖平台订单越权篡改收货地址案.md"
+  },
+  {
+    "title": "价格篡改 (Parameter Tampering)",
+    "domain": "业务安全",
+    "threat_type": "价格篡改",
+    "path": "knowledge/cases/vertical/bizsec/03-transaction/21-parameter-tampering.md"
+  },
+  {
+    "title": "支付接口重定向",
+    "domain": "业务安全",
+    "threat_type": "支付接口重定向",
+    "path": "knowledge/cases/vertical/bizsec/03-transaction/26-支付接口重定向.md"
+  },
+  {
+    "title": "双花攻击 (Double Spending)",
+    "domain": "业务安全",
+    "threat_type": "双花攻击",
+    "path": "knowledge/cases/vertical/bizsec/03-transaction/23-double-spending.md"
+  },
+  {
+    "title": "电商平台参数篡改实现“一分钱购机”漏洞案",
+    "domain": "业务安全",
+    "threat_type": "支付逻辑漏洞/金额篡改",
+    "path": "knowledge/cases/vertical/bizsec/03-transaction/01-电商平台参数篡改实现“一分钱购机”漏洞案.md"
+  },
+  {
+    "title": "汇率套利",
+    "domain": "业务安全",
+    "threat_type": "汇率套利",
+    "path": "knowledge/cases/vertical/bizsec/03-transaction/29-汇率套利.md"
+  },
+  {
+    "title": "退款欺诈 (Refund Fraud)",
+    "domain": "业务安全",
+    "threat_type": "退款欺诈",
+    "path": "knowledge/cases/vertical/bizsec/03-transaction/24-refund-fraud.md"
+  },
+  {
+    "title": "股票交易平台恶意高频撤单导致虚假报盘",
+    "domain": "业务安全",
+    "threat_type": "交易频率滥用/市场操纵",
+    "path": "knowledge/cases/vertical/bizsec/03-transaction/07-股票交易平台恶意高频撤单导致虚假报盘.md"
+  },
+  {
+    "title": "某大模型厂商内容池遭受“LLM 预训练爬虫”洗劫",
+    "domain": "业务安全",
+    "threat_type": "AI 训练数据非法采集",
+    "path": "knowledge/cases/vertical/bizsec/05-crawling/10-某大模型厂商内容池遭受“llm-预训练爬虫”洗劫.md"
+  },
+  {
+    "title": "招聘平台简历抓取",
+    "domain": "业务安全",
+    "threat_type": "招聘平台简历抓取",
+    "path": "knowledge/cases/vertical/bizsec/05-crawling/48-招聘平台简历抓取.md"
+  },
+  {
+    "title": "地图数据窃取",
+    "domain": "业务安全",
+    "threat_type": "地图数据窃取",
+    "path": "knowledge/cases/vertical/bizsec/05-crawling/45-地图数据窃取.md"
+  },
+  {
+    "title": "某搜索引擎结果页（SERP）遭受专业级大规模爬取",
+    "domain": "业务安全",
+    "threat_type": "搜索结果滥用",
+    "path": "knowledge/cases/vertical/bizsec/05-crawling/06-某搜索引擎结果页（serp）遭受专业级大规模爬取.md"
+  },
+  {
+    "title": "某房产中介平台房源图片及价格大规模被采集",
+    "domain": "业务安全",
+    "threat_type": "资产侵权/低级爬虫",
+    "path": "knowledge/cases/vertical/bizsec/05-crawling/04-某房产中介平台房源图片及价格大规模被采集.md"
+  },
+  {
+    "title": "竞品比价爬虫",
+    "domain": "业务安全",
+    "threat_type": "竞品比价爬虫",
+    "path": "knowledge/cases/vertical/bizsec/05-crawling/41-竞品比价爬虫.md"
+  },
+  {
+    "title": "核心内容脱水",
+    "domain": "业务安全",
+    "threat_type": "核心内容脱水",
+    "path": "knowledge/cases/vertical/bizsec/05-crawling/42-核心内容脱水.md"
+  },
+  {
+    "title": "数字水印绕过",
+    "domain": "业务安全",
+    "threat_type": "数字水印绕过",
+    "path": "knowledge/cases/vertical/bizsec/05-crawling/50-数字水印绕过.md"
+  },
+  {
+    "title": "某社交媒体平台用户关系链分布式爬取事件",
+    "domain": "业务安全",
+    "threat_type": "社交图谱窃取",
+    "path": "knowledge/cases/vertical/bizsec/05-crawling/05-某社交媒体平台用户关系链分布式爬取事件.md"
+  },
+  {
+    "title": "酒店/机票库存爬虫",
+    "domain": "业务安全",
+    "threat_type": "酒店/机票库存爬虫",
+    "path": "knowledge/cases/vertical/bizsec/05-crawling/49-酒店机票库存爬虫.md"
+  },
+  {
+    "title": "API 接口滥用",
+    "domain": "业务安全",
+    "threat_type": "API 接口滥用",
+    "path": "knowledge/cases/vertical/bizsec/05-crawling/46-api-接口滥用.md"
+  },
+  {
+    "title": "某跨境电商平台实时竞价爬虫遭遇战",
+    "domain": "业务安全",
+    "threat_type": "价格爬虫/商业情报窃取",
+    "path": "knowledge/cases/vertical/bizsec/05-crawling/01-某跨境电商平台实时竞价爬虫遭遇战.md"
+  },
+  {
+    "title": "某互联网金融平台遭遇“自动查询类”撞库与采集",
+    "domain": "业务安全",
+    "threat_type": "资产信息泄露/撞库",
+    "path": "knowledge/cases/vertical/bizsec/05-crawling/07-某互联网金融平台遭遇“自动查询类”撞库与采集.md"
+  },
+  {
+    "title": "搜索结果污染",
+    "domain": "业务安全",
+    "threat_type": "搜索结果污染",
+    "path": "knowledge/cases/vertical/bizsec/05-crawling/44-搜索结果污染.md"
+  },
+  {
+    "title": "某在线旅游平台（OTA）API 劫持与库存脱库",
+    "domain": "业务安全",
+    "threat_type": "接口自动化滥用",
+    "path": "knowledge/cases/vertical/bizsec/05-crawling/02-某在线旅游平台（ota）api-劫持与库存脱库.md"
+  },
+  {
+    "title": "某招聘网站简历库遭到“慢速分布式”脱库",
+    "domain": "业务安全",
+    "threat_type": "数据隐私窃取/爬虫",
+    "path": "knowledge/cases/vertical/bizsec/05-crawling/03-某招聘网站简历库遭到“慢速分布式”脱库.md"
+  },
+  {
+    "title": "某外卖平台商家信息及活动力度遭到“定向收割”",
+    "domain": "业务安全",
+    "threat_type": "竞争对手爬虫/商情收割",
+    "path": "knowledge/cases/vertical/bizsec/05-crawling/09-某外卖平台商家信息及活动力度遭到“定向收割”.md"
+  },
+  {
+    "title": "评论区广告机器人",
+    "domain": "业务安全",
+    "threat_type": "评论区广告机器人",
+    "path": "knowledge/cases/vertical/bizsec/05-crawling/47-评论区广告机器人.md"
+  },
+  {
+    "title": "某在线教育平台精品课视频内容遭非法采集",
+    "domain": "业务安全",
+    "threat_type": "知识产权窃取",
+    "path": "knowledge/cases/vertical/bizsec/05-crawling/08-某在线教育平台精品课视频内容遭非法采集.md"
+  },
+  {
+    "title": "用户信息抓取",
+    "domain": "业务安全",
+    "threat_type": "用户信息抓取",
+    "path": "knowledge/cases/vertical/bizsec/05-crawling/43-用户信息抓取.md"
+  },
+  {
+    "title": "社区刷赞/刷收藏",
+    "domain": "业务安全",
+    "threat_type": "社区刷赞/刷收藏",
+    "path": "knowledge/cases/vertical/bizsec/07-social/68-社区刷赞刷收藏.md"
+  },
+  {
+    "title": "陌生人社交平台“杀猪盘”自动化话术渗透攻击",
+    "domain": "业务安全",
+    "threat_type": "诈骗风险 (Fraud)",
+    "path": "knowledge/cases/vertical/bizsec/07-social/05-陌生人社交平台“杀猪盘”自动化话术渗透攻击.md"
+  },
+  {
+    "title": "动态排版欺诈",
+    "domain": "业务安全",
+    "threat_type": "动态排版欺诈",
+    "path": "knowledge/cases/vertical/bizsec/07-social/64-动态排版欺诈.md"
+  },
+  {
+    "title": "水军控评",
+    "domain": "业务安全",
+    "threat_type": "水军控评",
+    "path": "knowledge/cases/vertical/bizsec/07-social/62-水军控评.md"
+  },
+  {
+    "title": "举报系统滥用",
+    "domain": "业务安全",
+    "threat_type": "举报系统滥用",
+    "path": "knowledge/cases/vertical/bizsec/07-social/66-举报系统滥用.md"
+  },
+  {
+    "title": "私信引流",
+    "domain": "业务安全",
+    "threat_type": "私信引流",
+    "path": "knowledge/cases/vertical/bizsec/07-social/63-私信引流.md"
+  },
+  {
+    "title": "违规内容发布 (UGC Abuse)",
+    "domain": "业务安全",
+    "threat_type": "违规内容发布",
+    "path": "knowledge/cases/vertical/bizsec/07-social/61-ugc-abuse.md"
+  },
+  {
+    "title": "位置模拟 (GPS Spoofing)",
+    "domain": "业务安全",
+    "threat_type": "位置模拟",
+    "path": "knowledge/cases/vertical/bizsec/07-social/69-gps-spoofing.md"
+  },
+  {
+    "title": "直播间打赏套现",
+    "domain": "业务安全",
+    "threat_type": "直播间打赏套现",
+    "path": "knowledge/cases/vertical/bizsec/07-social/67-直播间打赏套现.md"
+  },
+  {
+    "title": "社交应用“强制关注”漏洞与刷粉黑产攻击",
+    "domain": "业务安全",
+    "threat_type": "CSRF/接口滥用",
+    "path": "knowledge/cases/vertical/bizsec/07-social/07-社交应用“强制关注”漏洞与刷粉黑产攻击.md"
+  },
+  {
+    "title": "头像/签名档违规",
+    "domain": "业务安全",
+    "threat_type": "头像/签名档违规",
+    "path": "knowledge/cases/vertical/bizsec/07-social/65-头像签名档违规.md"
+  },
+  {
+    "title": "社交应用 GraphQL 接口泄露导致的敏感隐私爬取",
+    "domain": "业务安全",
+    "threat_type": "数据爬取 (Scraping)",
+    "path": "knowledge/cases/vertical/bizsec/07-social/03-社交应用-graphql-接口泄露导致的敏感隐私爬取.md"
+  },
+  {
+    "title": "语音识别绕过",
+    "domain": "业务安全",
+    "threat_type": "语音识别绕过",
+    "path": "knowledge/cases/vertical/bizsec/07-social/70-语音识别绕过.md"
+  },
+  {
+    "title": "社交媒体平台“水军”刷榜与虚假互动攻击",
+    "domain": "业务安全",
+    "threat_type": "虚假流量 (Sybil Attack)",
+    "path": "knowledge/cases/vertical/bizsec/07-social/02-社交媒体平台“水军”刷榜与虚假互动攻击.md"
+  },
+  {
+    "title": "匿名社交平台通过“精准推送”机制推测用户真实身份",
+    "domain": "业务安全",
+    "threat_type": "隐私泄露 (Privacy De-anonymization)",
+    "path": "knowledge/cases/vertical/bizsec/07-social/10-匿名社交平台通过“精准推送”机制推测用户真实身份.md"
+  },
+  {
+    "title": "社交平台预览功能导致的 SSRF 漏洞攻击",
+    "domain": "业务安全",
+    "threat_type": "服务端请求伪造 (SSRF)",
+    "path": "knowledge/cases/vertical/bizsec/07-social/08-社交平台预览功能导致的-ssrf-漏洞攻击.md"
+  },
+  {
+    "title": "社交媒体平台“个人主页”存储型 XSS 蠕虫攻击",
+    "domain": "业务安全",
+    "threat_type": "跨站脚本攻击 (XSS)",
+    "path": "knowledge/cases/vertical/bizsec/07-social/09-社交媒体平台“个人主页”存储型-xss-蠕虫攻击.md"
+  },
+  {
+    "title": "社交平台短信验证码爆破导致的批量账号劫持",
+    "domain": "业务安全",
+    "threat_type": "账号接管 (Account Takeover)",
+    "path": "knowledge/cases/vertical/bizsec/07-social/01-社交平台短信验证码爆破导致的批量账号劫持.md"
+  },
+  {
+    "title": "社交软件红包功能的并发竞争逻辑漏洞攻击",
+    "domain": "业务安全",
+    "threat_type": "逻辑漏洞 (Business Logic Flaw)",
+    "path": "knowledge/cases/vertical/bizsec/07-social/04-社交软件红包功能的并发竞争逻辑漏洞攻击.md"
+  },
+  {
+    "title": "社交平台 API 未授权访问导致的好友关系链泄露",
+    "domain": "业务安全",
+    "threat_type": "越权访问 (BOLA/IDOR)",
+    "path": "knowledge/cases/vertical/bizsec/07-social/06-社交平台-api-未授权访问导致的好友关系链泄露.md"
+  },
+  {
+    "title": "信贷风控模型逆向探测与对抗样本投毒",
+    "domain": "业务安全",
+    "threat_type": "AI模型安全/风控绕过",
+    "path": "knowledge/cases/vertical/bizsec/06-fintech/02-信贷风控模型逆向探测与对抗样本投毒.md"
+  },
+  {
+    "title": "基金平台交易接口价格滞后套利漏洞",
+    "domain": "业务安全",
+    "threat_type": "数据一致性/时间差攻击",
+    "path": "knowledge/cases/vertical/bizsec/06-fintech/07-基金平台交易接口价格滞后套利漏洞.md"
+  },
+  {
+    "title": "消费分期APP设备指纹群控与批量薅羊毛",
+    "domain": "业务安全",
+    "threat_type": "自动化群控/虚假注册",
+    "path": "knowledge/cases/vertical/bizsec/06-fintech/05-消费分期app设备指纹群控与批量薅羊毛.md"
+  },
+  {
+    "title": "P2P 资金池挪用",
+    "domain": "业务安全",
+    "threat_type": "P2P 资金池挪用",
+    "path": "knowledge/cases/vertical/bizsec/06-fintech/55-p2p-资金池挪用.md"
+  },
+  {
+    "title": "虚拟货币交易所API签名机制绕过",
+    "domain": "业务安全",
+    "threat_type": "接口鉴权绕过/资产盗取",
+    "path": "knowledge/cases/vertical/bizsec/06-fintech/04-虚拟货币交易所api签名机制绕过.md"
+  },
+  {
+    "title": "理财产品赎回套利",
+    "domain": "业务安全",
+    "threat_type": "理财产品赎回套利",
+    "path": "knowledge/cases/vertical/bizsec/06-fintech/59-理财产品赎回套利.md"
+  },
+  {
+    "title": "金融内部人作弊",
+    "domain": "业务安全",
+    "threat_type": "金融内部人作弊",
+    "path": "knowledge/cases/vertical/bizsec/06-fintech/60-金融内部人作弊.md"
+  },
+  {
+    "title": "高频交易作弊",
+    "domain": "业务安全",
+    "threat_type": "高频交易作弊",
+    "path": "knowledge/cases/vertical/bizsec/06-fintech/56-高频交易作弊.md"
+  },
+  {
+    "title": "银行卡鉴权绕过",
+    "domain": "业务安全",
+    "threat_type": "银行卡鉴权绕过",
+    "path": "knowledge/cases/vertical/bizsec/06-fintech/58-银行卡鉴权绕过.md"
+  },
+  {
+    "title": "银行业务系统OTP短信验证码爆破与绕过",
+    "domain": "业务安全",
+    "threat_type": "暴力破解/逻辑绕过",
+    "path": "knowledge/cases/vertical/bizsec/06-fintech/09-银行业务系统otp短信验证码爆破与绕过.md"
+  },
+  {
+    "title": "数字钱包私钥诱骗",
+    "domain": "业务安全",
+    "threat_type": "数字钱包私钥诱骗",
+    "path": "knowledge/cases/vertical/bizsec/06-fintech/57-数字钱包私钥诱骗.md"
+  },
+  {
+    "title": "反洗钱绕过 (AML Bypass)",
+    "domain": "业务安全",
+    "threat_type": "反洗钱绕过",
+    "path": "knowledge/cases/vertical/bizsec/06-fintech/52-aml-bypass.md"
+  },
+  {
+    "title": "征信数据篡改风险",
+    "domain": "业务安全",
+    "threat_type": "征信数据篡改风险",
+    "path": "knowledge/cases/vertical/bizsec/06-fintech/54-征信数据篡改风险.md"
+  },
+  {
+    "title": "保险理赔系统伪造图片逃避机器视觉审核漏洞",
+    "domain": "业务安全",
+    "threat_type": "AI对抗攻击/理赔欺诈",
+    "path": "knowledge/cases/vertical/bizsec/06-fintech/10-保险理赔系统伪造图片逃避机器视觉审核漏洞.md"
+  },
+  {
+    "title": "信用卡黑卡测试 (Carding)",
+    "domain": "业务安全",
+    "threat_type": "信用卡黑卡测试",
+    "path": "knowledge/cases/vertical/bizsec/06-fintech/53-carding.md"
+  },
+  {
+    "title": "P2P/信贷平台资金归集接口越权提现",
+    "domain": "业务安全",
+    "threat_type": "水平越权/资金盗刷",
+    "path": "knowledge/cases/vertical/bizsec/06-fintech/08-p2p信贷平台资金归集接口越权提现.md"
+  },
+  {
+    "title": "支付接口防重放漏洞导致双花攻击",
+    "domain": "业务安全",
+    "threat_type": "交易重放/资金双花",
+    "path": "knowledge/cases/vertical/bizsec/06-fintech/01-支付接口防重放漏洞导致双花攻击.md"
+  },
+  {
+    "title": "聚合支付平台并发退款导致资金透支",
+    "domain": "业务安全",
+    "threat_type": "条件竞争漏洞（Race Condition）",
+    "path": "knowledge/cases/vertical/bizsec/06-fintech/06-聚合支付平台并发退款导致资金透支.md"
+  },
+  {
+    "title": "骗贷欺诈 (Loan Fraud)",
+    "domain": "业务安全",
+    "threat_type": "骗贷欺诈",
+    "path": "knowledge/cases/vertical/bizsec/06-fintech/51-loan-fraud.md"
+  },
+  {
+    "title": "支付收银台越权篡改订单金额漏洞",
+    "domain": "业务安全",
+    "threat_type": "业务逻辑漏洞/越权篡改",
+    "path": "knowledge/cases/vertical/bizsec/06-fintech/03-支付收银台越权篡改订单金额漏洞.md"
+  },
+  {
+    "title": "游戏服 务器拒绝服务：协议层 DDoS 与压力攻击事件",
+    "domain": "业务安全",
+    "threat_type": "分布式拒绝服务攻击 (DDoS)",
+    "path": "knowledge/cases/vertical/bizsec/08-gaming/07-游戏服-务器拒绝服务：协议层-ddos-与压力攻击事件.md"
+  },
+  {
+    "title": "FPS竞技游戏之殇：驱动级（Ring0）自瞄透视作弊事件",
+    "domain": "业务安全",
+    "threat_type": "内存作弊与内核驱动过检测",
+    "path": "knowledge/cases/vertical/bizsec/08-gaming/02-fps竞技游戏之殇：驱动级（ring0）自瞄透视作弊事件.md"
+  },
+  {
+    "title": "虚拟道具刷取",
+    "domain": "业务安全",
+    "threat_type": "虚拟道具刷取",
+    "path": "knowledge/cases/vertical/bizsec/08-gaming/72-虚拟道具刷取.md"
+  },
+  {
+    "title": "游戏资源/皮肤复制漏洞：数据库竞争与逻辑并发陷阱",
+    "domain": "业务安全",
+    "threat_type": "逻辑漏洞与竞争条件 (Race Condition)",
+    "path": "knowledge/cases/vertical/bizsec/08-gaming/09-游戏资源皮肤复制漏洞：数据库竞争与逻辑并发陷阱.md"
+  },
+  {
+    "title": "代充欺诈 (IOS Refund)",
+    "domain": "业务安全",
+    "threat_type": "代充欺诈",
+    "path": "knowledge/cases/vertical/bizsec/08-gaming/76-ios-refund.md"
+  },
+  {
+    "title": "游戏内存篡改与脚本注入：Lua 脚本执行漏洞",
+    "domain": "业务安全",
+    "threat_type": "内存作弊与脚本注入",
+    "path": "knowledge/cases/vertical/bizsec/08-gaming/08-游戏内存篡改与脚本注入：lua-脚本执行漏洞.md"
+  },
+  {
+    "title": "账号交易诈骗",
+    "domain": "业务安全",
+    "threat_type": "账号交易诈骗",
+    "path": "knowledge/cases/vertical/bizsec/08-gaming/79-账号交易诈骗.md"
+  },
+  {
+    "title": "开放世界MMO游戏经济系统崩溃：脚本化“脱机挂”刷金事件",
+    "domain": "业务安全",
+    "threat_type": "自动化脚本与黑产工作室",
+    "path": "knowledge/cases/vertical/bizsec/08-gaming/01-开放世界mmo游戏经济系统崩溃：脚本化“脱机挂”刷金事件.md"
+  },
+  {
+    "title": "公会管理越权",
+    "domain": "业务安全",
+    "threat_type": "公会管理越权",
+    "path": "knowledge/cases/vertical/bizsec/08-gaming/78-公会管理越权.md"
+  },
+  {
+    "title": "游戏数据篡改",
+    "domain": "业务安全",
+    "threat_type": "游戏数据篡改",
+    "path": "knowledge/cases/vertical/bizsec/08-gaming/77-游戏数据篡改.md"
+  },
+  {
+    "title": "私服/辅助工具外挂",
+    "domain": "业务安全",
+    "threat_type": "私服/辅助工具外挂",
+    "path": "knowledge/cases/vertical/bizsec/08-gaming/80-私服辅助工具外挂.md"
+  },
+  {
+    "title": "休闲手游协议篡改：战力数值与结算篡改事件",
+    "domain": "业务安全",
+    "threat_type": "封包篡改与结算逻辑漏洞",
+    "path": "knowledge/cases/vertical/bizsec/08-gaming/04-休闲手游协议篡改：战力数值与结算篡改事件.md"
+  },
+  {
+    "title": "游戏支付风控危机：黑产代充与第三方支付回调诈骗",
+    "domain": "业务安全",
+    "threat_type": "支付欺诈与黑产代充",
+    "path": "knowledge/cases/vertical/bizsec/08-gaming/05-游戏支付风控危机：黑产代充与第三方支付回调诈骗.md"
+  },
+  {
+    "title": "打金工作室 (Gold Farming)",
+    "domain": "业务安全",
+    "threat_type": "打金工作室",
+    "path": "knowledge/cases/vertical/bizsec/08-gaming/73-gold-farming.md"
+  },
+  {
+    "title": "加速挂/瞬移挂",
+    "domain": "业务安全",
+    "threat_type": "加速挂/瞬移挂",
+    "path": "knowledge/cases/vertical/bizsec/08-gaming/74-加速挂瞬移挂.md"
+  },
+  {
+    "title": "卡牌手游逻辑漏洞：抽卡随机数回滚与刷取事件",
+    "domain": "业务安全",
+    "threat_type": "协议重放与逻辑一致性漏洞",
+    "path": "knowledge/cases/vertical/bizsec/08-gaming/03-卡牌手游逻辑漏洞：抽卡随机数回滚与刷取事件.md"
+  },
+  {
+    "title": "游戏账号批量劫持：撞库攻击与撞库黑产链",
+    "domain": "业务安全",
+    "threat_type": "账号安全与撞库攻击",
+    "path": "knowledge/cases/vertical/bizsec/08-gaming/06-游戏账号批量劫持：撞库攻击与撞库黑产链.md"
+  },
+  {
+    "title": "游戏外挂 (Wall-hacks/Aimbot)",
+    "domain": "业务安全",
+    "threat_type": "游戏外挂",
+    "path": "knowledge/cases/vertical/bizsec/08-gaming/71-wall-hacksaimbot.md"
+  },
+  {
+    "title": "掉线攻击",
+    "domain": "业务安全",
+    "threat_type": "掉线攻击",
+    "path": "knowledge/cases/vertical/bizsec/08-gaming/75-掉线攻击.md"
+  },
+  {
+    "title": "核心源码泄露导致“私服”泛滥：源码窃取与供应链风险",
+    "domain": "业务安全",
+    "threat_type": "源码泄露与私服侵权",
+    "path": "knowledge/cases/vertical/bizsec/08-gaming/10-核心源码泄露导致“私服”泛滥：源码窃取与供应链风险.md"
+  },
+  {
+    "title": "LLM 敏感数据提取",
+    "domain": "业务安全",
+    "threat_type": "LLM 敏感数据提取",
+    "path": "knowledge/cases/vertical/bizsec/10-ai/96-llm-敏感数据提取.md"
+  },
+  {
+    "title": "高价值金融风控模型逆向提取漏洞",
+    "domain": "业务安全",
+    "threat_type": "AI 模型窃取与逆向工程",
+    "path": "knowledge/cases/vertical/bizsec/10-ai/01-高价值金融风控模型逆向提取漏洞.md"
+  },
+  {
+    "title": "Deepfake 人脸绕过",
+    "domain": "业务安全",
+    "threat_type": "Deepfake 人脸绕过",
+    "path": "knowledge/cases/vertical/bizsec/10-ai/91-deepfake-人脸绕过.md"
+  },
+  {
+    "title": "LLM API 资源耗尽攻击（Resource Exhaustion DoS）",
+    "domain": "业务安全",
+    "threat_type": "拒绝服务攻击（DoS）",
+    "path": "knowledge/cases/vertical/bizsec/10-ai/05-llm-api-资源耗尽攻击（resource-exhaustion-dos）.md"
+  },
+  {
+    "title": "音频克隆欺诈",
+    "domain": "业务安全",
+    "threat_type": "音频克隆欺诈",
+    "path": "knowledge/cases/vertical/bizsec/10-ai/92-音频克隆欺诈.md"
+  },
+  {
+    "title": "智能风控绕过",
+    "domain": "业务安全",
+    "threat_type": "智能风控绕过",
+    "path": "knowledge/cases/vertical/bizsec/10-ai/99-智能风控绕过.md"
+  },
+  {
+    "title": "验证码对抗 AI",
+    "domain": "业务安全",
+    "threat_type": "验证码对抗 AI",
+    "path": "knowledge/cases/vertical/bizsec/10-ai/94-验证码对抗-ai.md"
+  },
+  {
+    "title": "医疗诊断模型成员推理攻击导致的隐私泄露",
+    "domain": "业务安全",
+    "threat_type": "隐私数据逆向泄露（Privacy Inversion）",
+    "path": "knowledge/cases/vertical/bizsec/10-ai/06-医疗诊断模型成员推理攻击导致的隐私泄露.md"
+  },
+  {
+    "title": "商业 AI 绘画助手核心 Prompt 泄露事件",
+    "domain": "业务安全",
+    "threat_type": "提示词泄露（Prompt Leaking）",
+    "path": "knowledge/cases/vertical/bizsec/10-ai/07-商业-ai-绘画助手核心-prompt-泄露事件.md"
+  },
+  {
+    "title": "自动化 AI 智能体（Agent）驱动的逻辑漏洞挖掘攻击",
+    "domain": "业务安全",
+    "threat_type": "自动化漏洞利用",
+    "path": "knowledge/cases/vertical/bizsec/10-ai/10-自动化-ai-智能体（agent）驱动的逻辑漏洞挖掘攻击.md"
+  },
+  {
+    "title": "AI 脚本自动化",
+    "domain": "业务安全",
+    "threat_type": "AI 脚本自动化",
+    "path": "knowledge/cases/vertical/bizsec/10-ai/97-ai-脚本自动化.md"
+  },
+  {
+    "title": "提示词注入 (Prompt Injection)",
+    "domain": "业务安全",
+    "threat_type": "提示词注入",
+    "path": "knowledge/cases/vertical/bizsec/10-ai/93-prompt-injection.md"
+  },
+  {
+    "title": "风险模型中毒",
+    "domain": "业务安全",
+    "threat_type": "风险模型中毒",
+    "path": "knowledge/cases/vertical/bizsec/10-ai/98-风险模型中毒.md"
+  },
+  {
+    "title": "电商推荐系统评论数据投毒（Data Poisoning）",
+    "domain": "业务安全",
+    "threat_type": "训练数据投毒攻击",
+    "path": "knowledge/cases/vertical/bizsec/10-ai/04-电商推荐系统评论数据投毒（data-poisoning）.md"
+  },
+  {
+    "title": "深度伪造（Deepfake）语音欺诈导致的高额财务转账",
+    "domain": "业务安全",
+    "threat_type": "社会工程学与身份伪造",
+    "path": "knowledge/cases/vertical/bizsec/10-ai/09-深度伪造（deepfake）语音欺诈导致的高额财务转账.md"
+  },
+  {
+    "title": "利用卷积神经网络绕过图形验证码的黑产刷单",
+    "domain": "业务安全",
+    "threat_type": "自动化工具绕过（AI vs AI）",
+    "path": "knowledge/cases/vertical/bizsec/10-ai/08-利用卷积神经网络绕过图形验证码的黑产刷单.md"
+  },
+  {
+    "title": "对抗性攻击 (Adversarial Attack)",
+    "domain": "业务安全",
+    "threat_type": "对抗性攻击",
+    "path": "knowledge/cases/vertical/bizsec/10-ai/95-adversarial-attack.md"
+  },
+  {
+    "title": "针对互联网银行 KYC 系统的对抗性样本攻击",
+    "domain": "业务安全",
+    "threat_type": "视觉对抗样本欺骗（Adversarial Examples）",
+    "path": "knowledge/cases/vertical/bizsec/10-ai/02-针对互联网银行-kyc-系统的对抗性样本攻击.md"
+  },
+  {
+    "title": "智能客服机器人间接提示词注入（Indirect Prompt Injection）",
+    "domain": "业务安全",
+    "threat_type": "提示词注入（Prompt Injection）",
+    "path": "knowledge/cases/vertical/bizsec/10-ai/03-智能客服机器人间接提示词注入（indirect-prompt-injection）.md"
+  },
+  {
+    "title": "自动化社会工程学",
+    "domain": "业务安全",
+    "threat_type": "自动化社会工程学",
+    "path": "knowledge/cases/vertical/bizsec/10-ai/100-自动化社会工程学.md"
+  },
+  {
+    "title": "07-social-engineering-reset (社交工程与客服重置密码案例)",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/bizsec/01-account/07-社交工程重置密码.md"
+  },
+  {
+    "title": "09-account-deletion-flaw (账户注销流程逻辑漏洞案例)",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/bizsec/01-account/09-注销流程漏洞.md"
+  },
+  {
+    "title": "10-mfa (MFA 绕过与疲劳攻击案例)",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/bizsec/01-account/10-mfa.md"
+  },
+  {
+    "title": "06-brute-force (在线暴力破解案例)",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/bizsec/01-account/06-brute-force.md"
+  },
+  {
+    "title": "04-sms-flooding (短信轰炸与资源消耗案例)",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/bizsec/01-account/04-sms-flooding.md"
+  },
+  {
+    "title": "01-credential-stuffing (撞库攻击案例)",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/bizsec/01-account/01-credential-stuffing.md"
+  },
+  {
+    "title": "02-fake-registration (批量虚假注册案例)",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/bizsec/01-account/02-fake-registration.md"
+  },
+  {
+    "title": "03-otp-bypass (短信验证码绕过案例)",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/bizsec/01-account/03-otp-bypass.md"
+  },
+  {
+    "title": "08-silent-rebinding (静默改绑账户凭证案例)",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/bizsec/01-account/08-静默改绑.md"
+  },
+  {
+    "title": "05-session-hijacking (会话劫持与固定案例)",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/bizsec/01-account/05-session-hijacking.md"
+  },
+  {
+    "title": "Kaseya VSA 零日漏洞利用与 REvil 勒索软件供应链攻击",
+    "domain": "信息安全",
+    "threat_type": "MSP 供应链攻击 / 勒索软件分发",
+    "path": "knowledge/cases/vertical/infosec/03-supply-chain/04-kaseya-vsa-零日漏洞利用与-revil-勒索软件供应链攻击.md"
+  },
+  {
+    "title": "Apache Log4j2 JNDI 注入漏洞 (Log4Shell) 引发的开源供应链危机",
+    "domain": "信息安全",
+    "threat_type": "开源组件漏洞 / 零日攻击",
+    "path": "knowledge/cases/vertical/infosec/03-supply-chain/02-apache-log4j2-jndi-注入漏洞-log4shell-引发的开源供应链危机.md"
+  },
+  {
+    "title": "GitHub Actions 工作流劫持与隐藏挖矿供应链攻击",
+    "domain": "信息安全",
+    "threat_type": "CI/CD 计算资源滥用 / 恶意 Pull Request",
+    "path": "knowledge/cases/vertical/infosec/03-supply-chain/09-github-actions-工作流劫持与隐藏挖矿供应链攻击.md"
+  },
+  {
+    "title": "针对前端开发者的精准 npm 恶意包后门 (例如 `eslint-scope` 事件)",
+    "domain": "信息安全",
+    "threat_type": "开源仓库账户接管 / 恶意包分发",
+    "path": "knowledge/cases/vertical/infosec/03-supply-chain/10-针对前端开发者的精准-npm-恶意包后门-例如-`eslint-scope`-事件.md"
+  },
+  {
+    "title": "Codecov Bash Uploader 凭证窃取与 CI/CD 供应链污染事件",
+    "domain": "信息安全",
+    "threat_type": "CI/CD 基础设施劫持 / 凭证窃取",
+    "path": "knowledge/cases/vertical/infosec/03-supply-chain/03-codecov-bash-uploader-凭证窃取与-cicd-供应链污染事件.md"
+  },
+  {
+    "title": "ASUS Live Update 工具被劫持的 ShadowHammer 供应链攻击",
+    "domain": "信息安全",
+    "threat_type": "硬件厂商更新劫持 / 精准目标攻击",
+    "path": "knowledge/cases/vertical/infosec/03-supply-chain/08-asus-live-update-工具被劫持的-shadowhammer-供应链攻击.md"
+  },
+  {
+    "title": "NotPetya 伪装勒索软件的破坏性供应链攻击 (M.E.Doc)",
+    "domain": "信息安全",
+    "threat_type": "软件更新污染 / 破坏性恶意软件 / 蠕虫",
+    "path": "knowledge/cases/vertical/infosec/03-supply-chain/06-notpetya-伪装勒索软件的破坏性供应链攻击-m.e.doc.md"
+  },
+  {
+    "title": "SolarWinds Orion 平台 Sunburst 高级供应链攻击事件",
+    "domain": "信息安全",
+    "threat_type": "软件供应链污染 / APT 攻击",
+    "path": "knowledge/cases/vertical/infosec/03-supply-chain/01-solarwinds-orion-平台-sunburst-高级供应链攻击事件.md"
+  },
+  {
+    "title": "NPM / PyPI 生态中的包名错误拼写 (Typosquatting) 与恶意代码注入",
+    "domain": "信息安全",
+    "threat_type": "开源包仓库污染 / 社会工程学",
+    "path": "knowledge/cases/vertical/infosec/03-supply-chain/05-npm-pypi-生态中的包名错误拼写-typosquatting-与恶意代码注入.md"
+  },
+  {
+    "title": "CCleaner 官方版本被植入恶意后门的供应链攻击",
+    "domain": "信息安全",
+    "threat_type": "软件分发劫持 / 后门植入",
+    "path": "knowledge/cases/vertical/infosec/03-supply-chain/07-ccleaner-官方版本被植入恶意后门的供应链攻击.md"
+  },
+  {
+    "title": "[DevSecOps流水线中硬编码机器身份凭证导致的供应链污染]",
+    "domain": "信息安全 - 身份安全",
+    "threat_type": "机器身份安全 / 密钥泄露 / 供应链安全",
+    "path": "knowledge/cases/vertical/infosec/06-identity/08-devsecops流水线中硬编码机器身份凭证导致的供应链污染.md"
+  },
+  {
+    "title": "[滥用AD配置通过DCSync实现域凭证彻底脱库]",
+    "domain": "信息安全 - 身份安全",
+    "threat_type": "活动目录攻击 / 凭证转储 / 域控制",
+    "path": "knowledge/cases/vertical/infosec/06-identity/03-滥用ad配置通过dcsync实现域凭证彻底脱库.md"
+  },
+  {
+    "title": "[针对高管VPN入口的MFA疲劳与社会工程学组合攻击]",
+    "domain": "信息安全 - 身份安全",
+    "threat_type": "多因素认证绕过 / 凭证窃取 / 社会工程学",
+    "path": "knowledge/cases/vertical/infosec/06-identity/02-针对高管vpn入口的mfa疲劳与社会工程学组合攻击.md"
+  },
+  {
+    "title": "[针对面向客户零售门户的大规模分布式僵尸网络撞库攻击]",
+    "domain": "信息安全 - 身份安全",
+    "threat_type": "撞库攻击 (Credential Stuffing) / 账户接管",
+    "path": "knowledge/cases/vertical/infosec/06-identity/10-针对面向客户零售门户的大规模分布式僵尸网络撞库攻击.md"
+  },
+  {
+    "title": "[跨组织域信任机制缺陷导致的联邦身份伪造与跨域越权]",
+    "domain": "信息安全 - 身份安全",
+    "threat_type": "联邦信任滥用 / 跨域攻击 / 票据伪造",
+    "path": "knowledge/cases/vertical/infosec/06-identity/09-跨组织域信任机制缺陷导致的联邦身份伪造与跨域越权.md"
+  },
+  {
+    "title": "[针对关键服务账号的Kerberoasting密码离线暴力破解]",
+    "domain": "信息安全 - 身份安全",
+    "threat_type": "离线破解 / 服务账号滥用 / 活动目录攻击",
+    "path": "knowledge/cases/vertical/infosec/06-identity/07-针对关键服务账号的kerberoasting密码离线暴力破解.md"
+  },
+  {
+    "title": "[利用恶意第三方OAuth应用实现云邮箱权限持久窃取]",
+    "domain": "信息安全 - 身份安全",
+    "threat_type": "应用层钓鱼 / 令牌窃取 / 授权滥用",
+    "path": "knowledge/cases/vertical/infosec/06-identity/04-利用恶意第三方oauth应用实现云邮箱权限持久窃取.md"
+  },
+  {
+    "title": "[利用哈希传递与票据传递在内网环境下的隐蔽横向移动]",
+    "domain": "信息安全 - 身份安全",
+    "threat_type": "凭证复用 / 横向移动 / 内存转储",
+    "path": "knowledge/cases/vertical/infosec/06-identity/05-利用哈希传递与票据传递在内网环境下的隐蔽横向移动.md"
+  },
+  {
+    "title": "[云环境SSRF漏洞结合IAM角色过度授权导致的全云接管]",
+    "domain": "信息安全 - 身份安全",
+    "threat_type": "云安全 / 配置错误 / IAM特权提升",
+    "path": "knowledge/cases/vertical/infosec/06-identity/06-云环境ssrf漏洞结合iam角色过度授权导致的全云接管.md"
+  },
+  {
+    "title": "[利用黄金SAML攻击伪造身份提供商认证跨云访问]",
+    "domain": "信息安全 - 身份安全",
+    "threat_type": "联邦身份滥用 / 令牌伪造 / 高级持续性威胁",
+    "path": "knowledge/cases/vertical/infosec/06-identity/01-利用黄金saml攻击伪造身份提供商认证跨云访问.md"
+  },
+  {
+    "title": "PyPI恶意包Typo-squatting(错别字)注入致开发人员本地环境失陷",
+    "domain": "信息安全",
+    "threat_type": "恶意组件投毒 / 凭证窃取",
+    "path": "knowledge/cases/vertical/infosec/09-devsecops/09-pypi恶意包typo-squatting错别字注入致开发人员本地环境失陷.md"
+  },
+  {
+    "title": "Privileged特权模式滥用导致Docker容器逃狱与宿主机接管",
+    "domain": "信息安全",
+    "threat_type": "容器逃逸 / 特权滥用",
+    "path": "knowledge/cases/vertical/infosec/09-devsecops/05-privileged特权模式滥用导致docker容器逃狱与宿主机接管.md"
+  },
+  {
+    "title": "某大型互联网公司CI/CD流水线遭服务账号越权入侵事件",
+    "domain": "信息安全",
+    "threat_type": "流水线入侵 / 权限提升",
+    "path": "knowledge/cases/vertical/infosec/09-devsecops/01-某大型互联网公司cicd流水线遭服务账号越权入侵事件.md"
+  },
+  {
+    "title": "GitHub Actions工作流滥用引发的大规模挖矿算力盗用事件",
+    "domain": "信息安全",
+    "threat_type": "CI/CD滥用 / 资源消耗",
+    "path": "knowledge/cases/vertical/infosec/09-devsecops/10-github-actions工作流滥用引发的大规模挖矿算力盗用事件.md"
+  },
+  {
+    "title": "知名开源NPM生态依赖混淆与供应链投毒攻击事件",
+    "domain": "信息安全",
+    "threat_type": "供应链攻击 / 依赖混淆",
+    "path": "knowledge/cases/vertical/infosec/09-devsecops/02-知名开源npm生态依赖混淆与供应链投毒攻击事件.md"
+  },
+  {
+    "title": "未授权访问Docker私有镜像仓库导致核心源码泄露",
+    "domain": "信息安全",
+    "threat_type": "未授权访问 / 数据泄露",
+    "path": "knowledge/cases/vertical/infosec/09-devsecops/07-未授权访问docker私有镜像仓库导致核心源码泄露.md"
+  },
+  {
+    "title": "Terraform基础设施即代码(IaC)配置失误致S3敏感数据泄露",
+    "domain": "信息安全",
+    "threat_type": "IaC配置错误 / 数据泄露",
+    "path": "knowledge/cases/vertical/infosec/09-devsecops/03-terraform基础设施即代码iac配置失误致s3敏感数据泄露.md"
+  },
+  {
+    "title": "GitHub开源代码库硬编码AWS AK/SK导致云环境大规模被勒索",
+    "domain": "信息安全",
+    "threat_type": "硬编码凭证泄露 / 资源劫持",
+    "path": "knowledge/cases/vertical/infosec/09-devsecops/04-github开源代码库硬编码aws-aksk导致云环境大规模被勒索.md"
+  },
+  {
+    "title": "Jenkins CI服务器不安全插件引发的远程代码执行(RCE)事件",
+    "domain": "信息安全",
+    "threat_type": "组件漏洞 / RCE",
+    "path": "knowledge/cases/vertical/infosec/09-devsecops/06-jenkins-ci服务器不安全插件引发的远程代码执行rce事件.md"
+  },
+  {
+    "title": "Kubernetes API Server裸奔引发的K8s集群全面接管攻击",
+    "domain": "信息安全",
+    "threat_type": "K8s配置漏洞 / 集群接管",
+    "path": "knowledge/cases/vertical/infosec/09-devsecops/08-kubernetes-api-server裸奔引发的k8s集群全面接管攻击.md"
+  },
+  {
+    "title": "[利用SMB与PsExec的勒索软件端点快速蠕虫化传播]",
+    "domain": "信息安全 - 端点安全",
+    "threat_type": "勒索软件 / 横向移动 / 蠕虫化传播",
+    "path": "knowledge/cases/vertical/infosec/05-endpoint/04-利用smb与psexec的勒索软件端点快速蠕虫化传播.md"
+  },
+  {
+    "title": "[利用WMI与PowerShell的隐蔽无文件恶意软件执行]",
+    "domain": "信息安全 - 端点安全",
+    "threat_type": "无文件攻击 (Fileless Malware) / 内存驻留",
+    "path": "knowledge/cases/vertical/infosec/05-endpoint/02-利用wmi与powershell的隐蔽无文件恶意软件执行.md"
+  },
+  {
+    "title": "[知名IT运维管理平台引发的泛网供应链攻击]",
+    "domain": "信息安全 - 端点安全",
+    "threat_type": "供应链攻击 / 远程代码执行 / 隐蔽横向移动",
+    "path": "knowledge/cases/vertical/infosec/05-endpoint/03-知名it运维管理平台引发的泛网供应链攻击.md"
+  },
+  {
+    "title": "[高级持续性威胁中的EDR内核回调劫持绕过]",
+    "domain": "信息安全 - 端点安全",
+    "threat_type": "EDR规避 / Rootkit / BYOVD",
+    "path": "knowledge/cases/vertical/infosec/05-endpoint/01-高级持续性威胁中的edr内核回调劫持绕过.md"
+  },
+  {
+    "title": "[利用Print Spooler漏洞的端点提权与隐蔽持久化]",
+    "domain": "信息安全 - 端点安全",
+    "threat_type": "权限提升 (Privilege Escalation) / 零日漏洞利用",
+    "path": "knowledge/cases/vertical/infosec/05-endpoint/05-利用print-spooler漏洞的端点提权与隐蔽持久化.md"
+  },
+  {
+    "title": "[恶意MDM配置文件植入导致高管BYOD设备失陷]",
+    "domain": "信息安全 - 端点安全",
+    "threat_type": "移动设备管理滥用 / 中间人攻击 / 钓鱼",
+    "path": "knowledge/cases/vertical/infosec/05-endpoint/06-恶意mdm配置文件植入导致高管byod设备失陷.md"
+  },
+  {
+    "title": "[Kubernetes生产环境特权容器逃逸与宿主机接管]",
+    "domain": "信息安全 - 端点安全 (云原生端点)",
+    "threat_type": "容器逃逸 / 提权 / 宿主机接管",
+    "path": "knowledge/cases/vertical/infosec/05-endpoint/10-kubernetes生产环境特权容器逃逸与宿主机接管.md"
+  },
+  {
+    "title": "[利用LotL离地战术规避防病毒的端点数据窃取]",
+    "domain": "信息安全 - 端点安全",
+    "threat_type": "离地攻击 (Living off the Land) / 隐蔽执行",
+    "path": "knowledge/cases/vertical/infosec/05-endpoint/07-利用lotl离地战术规避防病毒的端点数据窃取.md"
+  },
+  {
+    "title": "[利用进程空心化实现的仅内存驻留Dropper攻击]",
+    "domain": "信息安全 - 端点安全",
+    "threat_type": "内存注入 / 逃避防御 / 进程空心化",
+    "path": "knowledge/cases/vertical/infosec/05-endpoint/09-利用进程空心化实现的仅内存驻留dropper攻击.md"
+  },
+  {
+    "title": "[深植于SPI闪存的UEFI固件级Rootkit持久化事件]",
+    "domain": "信息安全 - 端点安全",
+    "threat_type": "固件攻击 / UEFI Rootkit / 极深持久化",
+    "path": "knowledge/cases/vertical/infosec/05-endpoint/08-深植于spi闪存的uefi固件级rootkit持久化事件.md"
+  },
+  {
+    "title": "案例：Terraform State 文件泄露导致的基础设施全面沦陷",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/infosec/01-infrastructure/06-案例：terraform-state-文件泄露导致的基础设施全面沦陷.md"
+  },
+  {
+    "title": "案例：云控制台管理员凭据遭钓鱼窃取导致的毁灭性破坏",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/infosec/01-infrastructure/08-案例：云控制台管理员凭据遭钓鱼窃取导致的毁灭性破坏.md"
+  },
+  {
+    "title": "案例：大型云存储 S3 Bucket 权限配置失误导致数亿级数据泄露",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/infosec/01-infrastructure/01-案例：大型云存储-s3-bucket-权限配置失误导致数亿级数据泄露.md"
+  },
+  {
+    "title": "案例：Elasticsearch 暴露在公网导致的海量用户日志数据泄露",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/infosec/01-infrastructure/05-案例：elasticsearch-暴露在公网导致的海量用户日志数据泄露.md"
+  },
+  {
+    "title": "案例：Redis 未授权访问导致的远程代码执行 (RCE) 与服务器彻底沦陷",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/infosec/01-infrastructure/10-案例：redis-未授权访问导致的远程代码执行-rce-与服务器彻底沦陷.md"
+  },
+  {
+    "title": "案例：CI/CD 供应链污染与持续集成环境变量大面积泄露",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/infosec/01-infrastructure/04-案例：cicd-供应链污染与持续集成环境变量大面积泄露.md"
+  },
+  {
+    "title": "案例：云端 SSRF 漏洞结合 IAM 角色特权提升的深度入侵",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/infosec/01-infrastructure/02-案例：云端-ssrf-漏洞结合-iam-角色特权提升的深度入侵.md"
+  },
+  {
+    "title": "案例：Docker Daemon API 未授权暴露导致的挖矿僵尸网络入侵",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/infosec/01-infrastructure/07-案例：docker-daemon-api-未授权暴露导致的挖矿僵尸网络入侵.md"
+  },
+  {
+    "title": "案例：Kubernetes Dashboard 未授权访问导致的集群接管",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/infosec/01-infrastructure/03-案例：kubernetes-dashboard-未授权访问导致的集群接管.md"
+  },
+  {
+    "title": "案例：云端 VPC 安全组配置失误导致的 RDP/SSH 暴力破解与勒索软件植入",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/cases/vertical/infosec/01-infrastructure/09-案例：云端-vpc-安全组配置失误导致的-rdpssh-暴力破解与勒索软件植入.md"
+  },
+  {
+    "title": "02-api-security Case 03: 某网约车平台功能级授权缺失 (BFLA) 引发账户劫持",
+    "domain": "信息安全 / API安全",
+    "threat_type": "缺失功能级授权 (Broken Function Level Authorization)",
+    "path": "knowledge/cases/vertical/infosec/02-api-security/03-02-api-security-case-03-某网约车平台功能级授权缺失-bfla-引发账户劫持.md"
+  },
+  {
+    "title": "02-api-security Case 08: 某加密货币交易平台 CORS 配置错误导致的用户资金被盗",
+    "domain": "信息安全 / API安全",
+    "threat_type": "安全配置错误 (Security Misconfiguration) / CORS",
+    "path": "knowledge/cases/vertical/infosec/02-api-security/08-02-api-security-case-08-某加密货币交易平台-cors-配置错误导致的用户资金被盗.md"
+  },
+  {
+    "title": "02-api-security Case 06: 某在线旅游平台 GraphQL API 深度嵌套导致的批量数据爬取",
+    "domain": "信息安全 / API安全",
+    "threat_type": "资源消耗缺失 / 越权访问 (GraphQL Security)",
+    "path": "knowledge/cases/vertical/infosec/02-api-security/06-02-api-security-case-06-某在线旅游平台-graphql-api-深度嵌套导致的批量数据爬取.md"
+  },
+  {
+    "title": "02-api-security Case 01: 某金融理财App BOLA/IDOR导致大规模用户流水泄露",
+    "domain": "信息安全 / API安全",
+    "threat_type": "越权访问 (BOLA/IDOR)",
+    "path": "knowledge/cases/vertical/infosec/02-api-security/01-02-api-security-case-01-某金融理财app-bolaidor导致大规模用户流水泄露.md"
+  },
+  {
+    "title": "02-api-security Case 05: 某互联网医疗平台影子API泄露敏感健康数据",
+    "domain": "信息安全 / API安全",
+    "threat_type": "资产管理不当 (Improper Inventory Management) / 影子API",
+    "path": "knowledge/cases/vertical/infosec/02-api-security/05-02-api-security-case-05-某互联网医疗平台影子api泄露敏感健康数据.md"
+  },
+  {
+    "title": "02-api-security Case 04: 某SaaS协作工具接口速率限制失效引发的短信轰炸与DoS",
+    "domain": "信息安全 / API安全",
+    "threat_type": "资源消耗缺乏限制 (Unrestricted Resource Consumption)",
+    "path": "knowledge/cases/vertical/infosec/02-api-security/04-02-api-security-case-04-某saas协作工具接口速率限制失效引发的短信轰炸与dos.md"
+  },
+  {
+    "title": "02-api-security Case 07: 某云存储提供商 Webhook API 导致的 SSRF",
+    "domain": "信息安全 / API安全",
+    "threat_type": "服务端请求伪造 (Server-Side Request Forgery)",
+    "path": "knowledge/cases/vertical/infosec/02-api-security/07-02-api-security-case-07-某云存储提供商-webhook-api-导致的-ssrf.md"
+  },
+  {
+    "title": "02-api-security Case 02: 某大型电商平台 Mass Assignment 导致权限提升",
+    "domain": "信息安全 / API安全",
+    "threat_type": "批量赋值 (Mass Assignment)",
+    "path": "knowledge/cases/vertical/infosec/02-api-security/02-02-api-security-case-02-某大型电商平台-mass-assignment-导致权限提升.md"
+  },
+  {
+    "title": "02-api-security Case 09: 某社交平台不安全的数据过滤引发的海量用户画像泄露",
+    "domain": "信息安全 / API安全",
+    "threat_type": "数据暴露过多 (Excessive Data Exposure)",
+    "path": "knowledge/cases/vertical/infosec/02-api-security/09-02-api-security-case-09-某社交平台不安全的数据过滤引发的海量用户画像泄露.md"
+  },
+  {
+    "title": "02-api-security Case 10: 某物流系统文件上传 API 绕过导致服务器沦陷 (RCE)",
+    "domain": "信息安全 / API安全",
+    "threat_type": "不安全的内容校验 (Improper Content Validation) / RCE",
+    "path": "knowledge/cases/vertical/infosec/02-api-security/10-02-api-security-case-10-某物流系统文件上传-api-绕过导致服务器沦陷-rce.md"
+  },
+  {
+    "title": "企业内部运维人员利用高权限绕过DLP系统批量导出核心客户名单",
+    "domain": "信息安全 (数据保护)",
+    "threat_type": "内部威胁 (Insider Threat) / 特权账户滥用",
+    "path": "knowledge/cases/vertical/infosec/08-data-protection/04-企业内部运维人员利用高权限绕过dlp系统批量导出核心客户名单.md"
+  },
+  {
+    "title": "第三方供应链厂商数据留存违规导致的过历史数据大规模泄露事件",
+    "domain": "信息安全 (数据保护)",
+    "threat_type": "供应链安全 / 数据生命周期管理违规",
+    "path": "knowledge/cases/vertical/infosec/08-data-protection/06-第三方供应链厂商数据留存违规导致的过历史数据大规模泄露事件.md"
+  },
+  {
+    "title": "办公终端遭受Infostealer恶意软件攻击导致企业级密码管理器主密钥失窃",
+    "domain": "信息安全 (数据保护)",
+    "threat_type": "恶意软件 (Infostealer) / 密钥泄露 / 凭据盗窃",
+    "path": "knowledge/cases/vertical/infosec/08-data-protection/09-办公终端遭受infostealer恶意软件攻击导致企业级密码管理器主密钥失窃.md"
+  },
+  {
+    "title": "某知名云盘存储桶(S3)权限配置错误导致数亿条用户交易记录暴露",
+    "domain": "信息安全 (数据保护)",
+    "threat_type": "云存储配置错误 / 敏感数据泄露",
+    "path": "knowledge/cases/vertical/infosec/08-data-protection/01-某知名云盘存储桶s3权限配置错误导致数亿条用户交易记录暴露.md"
+  },
+  {
+    "title": "某大型医疗机构未加密数据库备份快照遭勒索软件组织窃取并双重勒索",
+    "domain": "信息安全 (数据保护)",
+    "threat_type": "勒索软件 / 静态数据未加密 / 双重勒索",
+    "path": "knowledge/cases/vertical/infosec/08-data-protection/03-某大型医疗机构未加密数据库备份快照遭勒索软件组织窃取并双重勒索.md"
+  },
+  {
+    "title": "某车企车联网API接口传输明文数据导致车辆实时轨迹与隐私被大规模抓取",
+    "domain": "信息安全 (数据保护)",
+    "threat_type": "传输中数据未加密 (Data in Transit) / API信息泄露",
+    "path": "knowledge/cases/vertical/infosec/08-data-protection/05-某车企车联网api接口传输明文数据导致车辆实时轨迹与隐私被大规模抓取.md"
+  },
+  {
+    "title": "数据库同态加密算法实现缺陷导致密文数据遭受选择明文攻击被还原",
+    "domain": "信息安全 (数据保护)",
+    "threat_type": "密码学缺陷 / 弱加密算法实现",
+    "path": "knowledge/cases/vertical/infosec/08-data-protection/07-数据库同态加密算法实现缺陷导致密文数据遭受选择明文攻击被还原.md"
+  },
+  {
+    "title": "某跨国公司敏感数据跨境传输未脱敏引发的GDPR严重违规与巨额罚款",
+    "domain": "信息安全 (数据保护)",
+    "threat_type": "数据合规风险 / 跨境传输违规 / 数据未脱敏",
+    "path": "knowledge/cases/vertical/infosec/08-data-protection/08-某跨国公司敏感数据跨境传输未脱敏引发的gdpr严重违规与巨额罚款.md"
+  },
+  {
+    "title": "开发人员硬编码AWS AK/SK至GitHub公有仓库引发的数据毁灭性勒索",
+    "domain": "信息安全 (数据保护)",
+    "threat_type": "凭证泄露 / 内部威胁漏洞 / 勒索攻击",
+    "path": "knowledge/cases/vertical/infosec/08-data-protection/02-开发人员硬编码aws-aksk至github公有仓库引发的数据毁灭性勒索.md"
+  },
+  {
+    "title": "废弃服务器硬盘未执行安全擦除(DoD 5220.22-M)导致恢复出的财务报表泄露",
+    "domain": "信息安全 (数据保护)",
+    "threat_type": "物理安全 / 数据残余 / 数据销毁违规",
+    "path": "knowledge/cases/vertical/infosec/08-data-protection/10-废弃服务器硬盘未执行安全擦除dod-5220.22-m导致恢复出的财务报表泄露.md"
+  },
+  {
+    "title": "5G网络切片(Network Slicing)架构下API越权导致工业控制层渗透",
+    "domain": "信息安全",
+    "threat_type": "网络切片攻击 / 5G安全",
+    "path": "knowledge/cases/vertical/infosec/10-emerging/09-5g网络切片network-slicing架构下api越权导致工业控制层渗透.md"
+  },
+  {
+    "title": "工业物联网(OT)关键基础设施遭遇针对性勒索软件瘫痪网络",
+    "domain": "信息安全",
+    "threat_type": "OT网络入侵 / 勒索软件",
+    "path": "knowledge/cases/vertical/infosec/10-emerging/03-工业物联网ot关键基础设施遭遇针对性勒索软件瘫痪网络.md"
+  },
+  {
+    "title": "云原生Serverless架构函数遭受资源耗尽攻击(Denial of Wallet)",
+    "domain": "信息安全",
+    "threat_type": "拒绝钱包攻击 / 资源耗尽",
+    "path": "knowledge/cases/vertical/infosec/10-emerging/07-云原生serverless架构函数遭受资源耗尽攻击denial-of-wallet.md"
+  },
+  {
+    "title": "多态性AI生成恶意软件(Polymorphic AI Malware)自动变异躲避查杀",
+    "domain": "信息安全",
+    "threat_type": "AI辅助攻击 / 多态变异",
+    "path": "knowledge/cases/vertical/infosec/10-emerging/10-多态性ai生成恶意软件polymorphic-ai-malware自动变异躲避查杀.md"
+  },
+  {
+    "title": "对抗性机器学习(Adversarial ML)攻击成功绕过下一代EDR引擎",
+    "domain": "信息安全",
+    "threat_type": "对抗机器学习 / 恶意软件逃避",
+    "path": "knowledge/cases/vertical/infosec/10-emerging/08-对抗性机器学习adversarial-ml攻击成功绕过下一代edr引擎.md"
+  },
+  {
+    "title": "Deepfake深度伪造语音钓鱼诱导千万级财务转账欺诈案",
+    "domain": "信息安全",
+    "threat_type": "AI深度伪造 / 社会工程学",
+    "path": "knowledge/cases/vertical/infosec/10-emerging/05-deepfake深度伪造语音钓鱼诱导千万级财务转账欺诈案.md"
+  },
+  {
+    "title": "AI大语言模型(LLM)提示词注入(Prompt Injection)致企业机密泄露",
+    "domain": "信息安全",
+    "threat_type": "提示词注入 / AI安全",
+    "path": "knowledge/cases/vertical/infosec/10-emerging/01-ai大语言模型llm提示词注入prompt-injection致企业机密泄露.md"
+  },
+  {
+    "title": "DeFi平台智能合约闪电贷(Flash Loan)攻击致千万美元损失",
+    "domain": "信息安全",
+    "threat_type": "智能合约漏洞 / 闪电贷攻击",
+    "path": "knowledge/cases/vertical/infosec/10-emerging/02-defi平台智能合约闪电贷flash-loan攻击致千万美元损失.md"
+  },
+  {
+    "title": "Web3跨链桥(Cross-Chain Bridge)多方签名伪造巨额盗窃案",
+    "domain": "信息安全",
+    "threat_type": "加密签名伪造 / 跨链漏洞",
+    "path": "knowledge/cases/vertical/infosec/10-emerging/04-web3跨链桥cross-chain-bridge多方签名伪造巨额盗窃案.md"
+  },
+  {
+    "title": "自动驾驶汽车(AV)激光雷达与摄像头多传感器欺骗攻击",
+    "domain": "信息安全",
+    "threat_type": "传感器欺骗 / 物联网安全",
+    "path": "knowledge/cases/vertical/infosec/10-emerging/06-自动驾驶汽车av激光雷达与摄像头多传感器欺骗攻击.md"
+  },
+  {
+    "title": "某电商大促秒杀活动中的并发逻辑漏洞导致的超卖与资金损失",
+    "domain": "信息安全 (应用安全)",
+    "threat_type": "业务逻辑漏洞 / 并发条件竞争 (Race Condition)",
+    "path": "knowledge/cases/vertical/infosec/07-app-sec/07-某电商大促秒杀活动中的并发逻辑漏洞导致的超卖与资金损失.md"
+  },
+  {
+    "title": "某金融支付APP基于JWT弱签名算法(None)伪造管理员Token漏洞",
+    "domain": "信息安全 (应用安全)",
+    "threat_type": "身份认证绕过 / JWT算法混淆",
+    "path": "knowledge/cases/vertical/infosec/07-app-sec/05-某金融支付app基于jwt弱签名算法none伪造管理员token漏洞.md"
+  },
+  {
+    "title": "某医疗挂号系统基于WebSocket的跨站WebSocket劫持(CSWSH)漏洞",
+    "domain": "信息安全 (应用安全)",
+    "threat_type": "跨站WebSocket劫持 (CSWSH) / 数据越权",
+    "path": "knowledge/cases/vertical/infosec/07-app-sec/10-某医疗挂号系统基于websocket的跨站websocket劫持cswsh漏洞.md"
+  },
+  {
+    "title": "企业级ERP系统XXE漏洞结合OOB外带获取服务器敏感配置",
+    "domain": "信息安全 (应用安全)",
+    "threat_type": "XML外部实体注入 (XXE) / 信息泄露",
+    "path": "knowledge/cases/vertical/infosec/07-app-sec/06-企业级erp系统xxe漏洞结合oob外带获取服务器敏感配置.md"
+  },
+  {
+    "title": "某头部社交平台GraphQL API批量越权导致百万用户隐私数据泄露事件",
+    "domain": "信息安全 (应用安全)",
+    "threat_type": "越权访问 (IDOR / BOLA) / API接口滥用",
+    "path": "knowledge/cases/vertical/infosec/07-app-sec/01-某头部社交平台graphql-api批量越权导致百万用户隐私数据泄露事件.md"
+  },
+  {
+    "title": "知名SaaS服务商SAML OAuth配置缺陷引发的单点登录账户接管",
+    "domain": "信息安全 (应用安全)",
+    "threat_type": "SAML签名绕过 / 账户接管 (Account Takeover)",
+    "path": "knowledge/cases/vertical/infosec/07-app-sec/02-知名saas服务商saml-oauth配置缺陷引发的单点登录账户接管.md"
+  },
+  {
+    "title": "云原生环境下微服务间SSRF漏洞引发的云凭证(Metadata)窃取",
+    "domain": "信息安全 (应用安全)",
+    "threat_type": "服务端请求伪造 (SSRF) / 云凭证泄露",
+    "path": "knowledge/cases/vertical/infosec/07-app-sec/04-云原生环境下微服务间ssrf漏洞引发的云凭证metadata窃取.md"
+  },
+  {
+    "title": "供应链管理系统二次SQL注入导致后台管理员密码哈希被窃取",
+    "domain": "信息安全 (应用安全)",
+    "threat_type": "二次SQL注入 (Second-Order SQLi) / 权限提升",
+    "path": "knowledge/cases/vertical/infosec/07-app-sec/08-供应链管理系统二次sql注入导致后台管理员密码哈希被窃取.md"
+  },
+  {
+    "title": "基于原型链污染(Prototype Pollution)的Node.js应用沙箱逃逸与RCE",
+    "domain": "信息安全 (应用安全)",
+    "threat_type": "原型链污染 (Prototype Pollution) / RCE",
+    "path": "knowledge/cases/vertical/infosec/07-app-sec/09-基于原型链污染prototype-pollution的node.js应用沙箱逃逸与rce.md"
+  },
+  {
+    "title": "某开源Java框架Fastjson反序列化漏洞导致核心业务RCE链分析",
+    "domain": "信息安全 (应用安全)",
+    "threat_type": "反序列化漏洞 (Insecure Deserialization) / RCE",
+    "path": "knowledge/cases/vertical/infosec/07-app-sec/03-某开源java框架fastjson反序列化漏洞导致核心业务rce链分析.md"
+  },
+  {
+    "title": "基于 GRE 隧道与 VPN 劫持的高级 APT 网络潜伏",
+    "domain": "信息安全",
+    "threat_type": "高级隐蔽通信 / 网络隧道利用",
+    "path": "knowledge/cases/vertical/infosec/04-network/10-基于-gre-隧道与-vpn-劫持的高级-apt-网络潜伏.md"
+  },
+  {
+    "title": "Citrix ADC/Gateway 漏洞 (CVE-2019-19781) 造成的内网入口突破",
+    "domain": "信息安全",
+    "threat_type": "应用交付控制器漏洞 / 目录遍历",
+    "path": "knowledge/cases/vertical/infosec/04-network/08-citrix-adcgateway-漏洞-cve-2019-19781-造成的内网入口突破.md"
+  },
+  {
+    "title": "VMware 企业级基础组件漏洞导致的数据中心沦陷",
+    "domain": "信息安全",
+    "threat_type": "虚拟化基础设施攻击 / RCE",
+    "path": "knowledge/cases/vertical/infosec/04-network/07-vmware-企业级基础组件漏洞导致的数据中心沦陷.md"
+  },
+  {
+    "title": "ProxyLogon (CVE-2021-26855等) Exchange Server 内网突破事件",
+    "domain": "信息安全",
+    "threat_type": "边界突破 / 远程代码执行",
+    "path": "knowledge/cases/vertical/infosec/04-network/02-proxylogon-cve-2021-26855等-exchange-server-内网突破事件.md"
+  },
+  {
+    "title": "DNS 缓存投毒与局域网中间人攻击深度案例",
+    "domain": "信息安全",
+    "threat_type": "域名解析劫持 / 中间人攻击",
+    "path": "knowledge/cases/vertical/infosec/04-network/06-dns-缓存投毒与局域网中间人攻击深度案例.md"
+  },
+  {
+    "title": "ZeroLogon (CVE-2020-1472) 域控提权与内网漫游",
+    "domain": "信息安全",
+    "threat_type": "权限提升 / 内网横向移动",
+    "path": "knowledge/cases/vertical/infosec/04-network/01-zerologon-cve-2020-1472-域控提权与内网漫游.md"
+  },
+  {
+    "title": "Kerberoasting 攻击引发的内网服务凭证接管",
+    "domain": "信息安全",
+    "threat_type": "身份认证协议攻击 / 密码破解",
+    "path": "knowledge/cases/vertical/infosec/04-network/09-kerberoasting-攻击引发的内网服务凭证接管.md"
+  },
+  {
+    "title": "BGP 路由劫持导致的骨干网络流量窃听与重定向",
+    "domain": "信息安全",
+    "threat_type": "网络基础设施攻击 / 流量劫持",
+    "path": "knowledge/cases/vertical/infosec/04-network/05-bgp-路由劫持导致的骨干网络流量窃听与重定向.md"
+  },
+  {
+    "title": "Cisco VPN 与防火墙漏洞导致的边界突破与内网穿透",
+    "domain": "信息安全",
+    "threat_type": "边界设备漏洞 / VPN 凭证劫持",
+    "path": "knowledge/cases/vertical/infosec/04-network/04-cisco-vpn-与防火墙漏洞导致的边界突破与内网穿透.md"
+  },
+  {
+    "title": "WannaCry (MS17-010) 永恒之蓝的全球内网蠕虫风暴",
+    "domain": "信息安全",
+    "threat_type": "内网蠕虫传播 / 勒索软件",
+    "path": "knowledge/cases/vertical/infosec/04-network/03-wannacry-ms17-010-永恒之蓝的全球内网蠕虫风暴.md"
+  }
+]

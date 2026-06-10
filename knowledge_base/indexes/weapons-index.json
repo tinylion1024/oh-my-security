@@ -1,0 +1,32 @@
+[
+  {
+    "title": "运行时应用自防护 (RASP)",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/weapons/infosec-rasp.md"
+  },
+  {
+    "title": "业务安全武器：全链路反爬虫治理",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/weapons/bizsec-anti-bot.md"
+  },
+  {
+    "title": "设备指纹 (Device Fingerprinting) SDK",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/weapons/bizsec-device-id.md"
+  },
+  {
+    "title": "差分隐私 (Differential Privacy) 算法库",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/weapons/datasec-diff-privacy.md"
+  },
+  {
+    "title": "AI 提示词防火墙 (Prompt Firewall/Filter)",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/weapons/aisec-prompt-firewall.md"
+  }
+]

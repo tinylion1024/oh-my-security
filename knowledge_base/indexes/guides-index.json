@@ -1,0 +1,14 @@
+[
+  {
+    "title": "STRIDE 威胁建模方法论",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/guides/threat-modeling-stride.md"
+  },
+  {
+    "title": "应急响应剧本：数据泄露处置 (Incident Response - Data Leak)",
+    "domain": "Unknown",
+    "threat_type": "Unknown",
+    "path": "knowledge/guides/incident-response-data-leak.md"
+  }
+]
