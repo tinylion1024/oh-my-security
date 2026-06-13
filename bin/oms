@@ -8,6 +8,7 @@ import os
 import json
 from oms_core.retriever import SecurityKnowledgeRetriever
 from oms_core.cvss_calc import CVSSCalculator
+from oms_core.incident import INCIDENT_TYPES
 
 # 尝试导入 Rich 以获得酷炫的终端输出，如果没有则使用普通 print
 try:
@@ -96,6 +97,25 @@ def main():
     # account guide
     account_guide_parser = account_subparsers.add_parser("guide", help="显示账号安全最佳实践指南")
 
+    # Command: domain
+    domain_parser = subparsers.add_parser("domain", help="域名安全审计 (SSL证书与DNS配置)")
+    domain_subparsers = domain_parser.add_subparsers(dest="domain_command", help="域名安全子命令")
+
+    # domain check
+    domain_check_parser = domain_subparsers.add_parser("check", help="检查域名安全配置")
+    domain_check_parser.add_argument("domain", type=str, help="要检查的域名 (如 'example.com')")
+
+    # domain ssl
+    domain_ssl_parser = domain_subparsers.add_parser("ssl", help="检查SSL证书状态")
+    domain_ssl_parser.add_argument("domain", type=str, help="要检查的域名 (如 'example.com')")
+
+    # domain dns
+    domain_dns_parser = domain_subparsers.add_parser("dns", help="检查DNS配置")
+    domain_dns_parser.add_argument("domain", type=str, help="要检查的域名 (如 'example.com')")
+
+    # domain guide
+    domain_guide_parser = domain_subparsers.add_parser("guide", help="显示域名安全最佳实践指南")
+
     # Command: deps
     deps_parser = subparsers.add_parser("deps", help="依赖安全审计 (漏洞扫描与License合规)")
     deps_subparsers = deps_parser.add_subparsers(dest="deps_command", help="依赖安全子命令")
@@ -114,6 +134,47 @@ def main():
 
     # deps guide
     deps_guide_parser = deps_subparsers.add_parser("guide", help="显示依赖安全最佳实践指南")
+
+    # Command: incident
+    incident_parser = subparsers.add_parser("incident", help="应急响应 (事件分类与处置指南)")
+    incident_subparsers = incident_parser.add_subparsers(dest="incident_command", help="应急响应子命令")
+
+    # incident guide
+    incident_guide_parser = incident_subparsers.add_parser("guide", help="获取事件应急响应指南")
+    incident_guide_parser.add_argument("type", type=str, help="事件类型 (如 'data-breach', 'ransomware')")
+
+    # incident classify
+    incident_classify_parser = incident_subparsers.add_parser("classify", help="分类和定级安全事件")
+    incident_classify_parser.add_argument("description", type=str, help="事件描述")
+
+    # incident template
+    incident_template_parser = incident_subparsers.add_parser("template", help="获取事件报告模板")
+
+    # incident list
+    incident_list_parser = incident_subparsers.add_parser("list", help="列出所有事件类型")
+
+    # incident recovery
+    incident_recovery_parser = incident_subparsers.add_parser("recovery", help="获取恢复步骤")
+    incident_recovery_parser.add_argument("type", type=str, help="事件类型")
+
+    # Command: ai
+    ai_parser = subparsers.add_parser("ai", help="AI 安全审计 (Prompt注入与API Key泄露)")
+    ai_subparsers = ai_parser.add_subparsers(dest="ai_command", help="AI 安全子命令")
+
+    # ai audit
+    ai_audit_parser = ai_subparsers.add_parser("audit", help="审计 AI 代码安全性")
+    ai_audit_parser.add_argument("path", type=str, help="代码目录或文件路径")
+
+    # ai prompt-check
+    ai_prompt_parser = ai_subparsers.add_parser("prompt-check", help="检测 Prompt 注入风险")
+    ai_prompt_parser.add_argument("prompt", type=str, help="要检测的 Prompt 文本")
+
+    # ai key-check
+    ai_key_parser = ai_subparsers.add_parser("key-check", help="检查 API Key 泄露风险")
+    ai_key_parser.add_argument("path", type=str, help="代码目录或文件路径")
+
+    # ai guide
+    ai_guide_parser = ai_subparsers.add_parser("guide", help="显示 AI 安全最佳实践指南")
 
     args = parser.parse_args()
 
@@ -300,6 +361,58 @@ def main():
             else:
                 account_parser.print_help()
 
+    elif args.command == "domain":
+        from oms_core.domain import (
+            check_domain,
+            check_ssl,
+            check_dns,
+            get_domain_guide,
+            generate_domain_report
+        )
+
+        if args.domain_command == "check":
+            if console:
+                with console.status(f"[bold cyan]正在检查域名安全 {args.domain} ...[/bold cyan]", spinner="dots"):
+                    report = generate_domain_report(args.domain)
+                console.print(Markdown(report))
+            else:
+                print(f"正在检查域名安全 {args.domain} ...")
+                print(generate_domain_report(args.domain))
+
+        elif args.domain_command == "ssl":
+            if console:
+                with console.status(f"[bold yellow]正在检查SSL证书 {args.domain} ...[/bold yellow]", spinner="dots"):
+                    findings = check_ssl(args.domain)
+                report = _format_findings_report(findings, args.domain, "SSL证书检查")
+                console.print(Markdown(report))
+            else:
+                print(f"正在检查SSL证书 {args.domain} ...")
+                findings = check_ssl(args.domain)
+                print(_format_findings_report(findings, args.domain, "SSL证书检查"))
+
+        elif args.domain_command == "dns":
+            if console:
+                with console.status(f"[bold blue]正在检查DNS配置 {args.domain} ...[/bold blue]", spinner="dots"):
+                    findings = check_dns(args.domain)
+                report = _format_findings_report(findings, args.domain, "DNS配置检查")
+                console.print(Markdown(report))
+            else:
+                print(f"正在检查DNS配置 {args.domain} ...")
+                findings = check_dns(args.domain)
+                print(_format_findings_report(findings, args.domain, "DNS配置检查"))
+
+        elif args.domain_command == "guide":
+            if console:
+                console.print(Markdown(get_domain_guide()))
+            else:
+                print(get_domain_guide())
+
+        else:
+            if console:
+                domain_parser.print_help()
+            else:
+                domain_parser.print_help()
+
     elif args.command == "deps":
         from oms_core.deps import (
             scan_dependencies,
@@ -347,6 +460,128 @@ def main():
             else:
                 deps_parser.print_help()
 
+    elif args.command == "incident":
+        from oms_core.incident import (
+            get_incident_guide,
+            classify_incident,
+            get_recovery_steps,
+            get_incident_template,
+            list_incident_types
+        )
+
+        if args.incident_command == "guide":
+            guide = get_incident_guide(args.type)
+            if console:
+                console.print(Markdown(guide))
+            else:
+                print(guide)
+
+        elif args.incident_command == "classify":
+            result = classify_incident(args.description)
+            if console:
+                color = "red" if result.severity == "CRITICAL" else (
+                    "yellow" if result.severity in ["HIGH", "MEDIUM"] else "green"
+                )
+                console.print(f"\n[bold]事件分类结果[/bold]")
+                console.print(f"[bold]类型:[/bold] {result.incident_type}")
+                console.print(f"[bold]名称:[/bold] {INCIDENT_TYPES.get(result.incident_type, {}).get('name', '未知')}")
+                console.print(f"[bold]严重程度:[/bold] [{color}]{result.severity_label}[/{color}]")
+                console.print(f"[bold]置信度:[/bold] {result.confidence:.2f}")
+                console.print(f"[bold]描述:[/bold] {result.description}")
+                if result.keywords_matched:
+                    console.print(f"[bold]匹配关键词:[/bold] {', '.join(result.keywords_matched)}")
+            else:
+                print(f"\n事件分类结果")
+                print(f"类型: {result.incident_type}")
+                print(f"严重程度: {result.severity_label}")
+                print(f"置信度: {result.confidence:.2f}")
+                print(f"描述: {result.description}")
+                if result.keywords_matched:
+                    print(f"匹配关键词: {', '.join(result.keywords_matched)}")
+
+        elif args.incident_command == "template":
+            template = get_incident_template()
+            if console:
+                console.print(Markdown(template))
+            else:
+                print(template)
+
+        elif args.incident_command == "list":
+            types = list_incident_types()
+            if console:
+                table = Table(title="支持的事件类型")
+                table.add_column("类型", style="cyan", no_wrap=True)
+                table.add_column("名称", style="magenta")
+                table.add_column("严重程度", style="yellow")
+                table.add_column("描述", style="green")
+                for t in types:
+                    table.add_row(t["type"], t["name"], t["severity_label"], t["description"][:30] + "...")
+                console.print(table)
+            else:
+                print("\n支持的事件类型:")
+                for t in types:
+                    print(f"  - {t['type']}: {t['name']} ({t['severity_label']})")
+
+        elif args.incident_command == "recovery":
+            steps = get_recovery_steps(args.type)
+            if console:
+                console.print(Markdown(steps))
+            else:
+                print(steps)
+
+        else:
+            if console:
+                incident_parser.print_help()
+            else:
+                incident_parser.print_help()
+
+    elif args.command == "ai":
+        from oms_core.ai import (
+            audit_ai_code,
+            check_prompt_injection,
+            check_api_key_usage,
+            get_ai_guide
+        )
+
+        if args.ai_command == "audit":
+            if console:
+                with console.status(f"[bold magenta]正在审计 AI 代码安全 {args.path} ...[/bold magenta]", spinner="dots"):
+                    report = audit_ai_code(args.path)
+                console.print(Markdown(report))
+            else:
+                print(f"正在审计 AI 代码安全 {args.path} ...")
+                print(audit_ai_code(args.path))
+
+        elif args.ai_command == "prompt-check":
+            if console:
+                with console.status(f"[bold yellow]正在检测 Prompt 注入风险...[/bold yellow]", spinner="dots"):
+                    report = check_prompt_injection(args.prompt)
+                console.print(Markdown(report))
+            else:
+                print("正在检测 Prompt 注入风险...")
+                print(check_prompt_injection(args.prompt))
+
+        elif args.ai_command == "key-check":
+            if console:
+                with console.status(f"[bold red]正在检查 API Key 泄露 {args.path} ...[/bold red]", spinner="dots"):
+                    report = check_api_key_usage(args.path)
+                console.print(Markdown(report))
+            else:
+                print(f"正在检查 API Key 泄露 {args.path} ...")
+                print(check_api_key_usage(args.path))
+
+        elif args.ai_command == "guide":
+            if console:
+                console.print(Markdown(get_ai_guide()))
+            else:
+                print(get_ai_guide())
+
+        else:
+            if console:
+                ai_parser.print_help()
+            else:
+                ai_parser.print_help()
+
 
 def _format_findings_report(findings, path: str, title: str) -> str:
     """格式化漏洞发现报告"""
@@ -362,11 +597,16 @@ def _format_findings_report(findings, path: str, title: str) -> str:
 
     for i, f in enumerate(findings, 1):
         report_lines.append(f"## {i}. [{f.severity}] {f.category}")
+        report_lines.append(f"- **标题**: {f.title if hasattr(f, 'title') else f.category}")
         report_lines.append(f"- **描述**: {f.description}")
         report_lines.append(f"- **影响**: {f.impact}")
         report_lines.append(f"- **建议**: {f.recommendation}")
-        if f.code_snippet:
+        # 处理 VulnerabilityFinding 的 code_snippet 字段
+        if hasattr(f, 'code_snippet') and f.code_snippet:
             report_lines.append(f"- **代码**: `{f.code_snippet}`")
+        # 处理 SecurityFinding 的 details 字段
+        if hasattr(f, 'details') and f.details:
+            report_lines.append(f"- **详情**: `{f.details}`")
         report_lines.append("")
 
     return "\n".join(report_lines)
