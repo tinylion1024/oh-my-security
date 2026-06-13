@@ -62,6 +62,59 @@ def main():
     content_parser = subparsers.add_parser("content", help="创作者内容风控排雷 (防封号与隐私泄露)")
     content_parser.add_argument("path", type=str, help="Markdown 或文本文件路径 (如 'draft.md')")
 
+    # Command: payment
+    payment_parser = subparsers.add_parser("payment", help="支付安全审计 (防篡改与回调安全)")
+    payment_subparsers = payment_parser.add_subparsers(dest="payment_command", help="支付安全子命令")
+
+    # payment audit
+    payment_audit_parser = payment_subparsers.add_parser("audit", help="审计支付代码安全性")
+    payment_audit_parser.add_argument("path", type=str, help="代码目录或文件路径")
+
+    # payment check
+    payment_check_parser = payment_subparsers.add_parser("check", help="检查支付安全风险")
+    payment_check_parser.add_argument("--params", type=str, metavar="PATH", help="检查参数篡改风险")
+    payment_check_parser.add_argument("--callback", type=str, metavar="PATH", help="检查回调安全风险")
+
+    # payment guide
+    payment_guide_parser = payment_subparsers.add_parser("guide", help="显示支付安全最佳实践指南")
+
+    # Command: account
+    account_parser = subparsers.add_parser("account", help="账号安全审计 (密码强度与2FA配置)")
+    account_subparsers = account_parser.add_subparsers(dest="account_command", help="账号安全子命令")
+
+    # account check
+    account_check_parser = account_subparsers.add_parser("check", help="检查账号安全配置")
+    account_check_parser.add_argument("path", type=str, help="代码目录或文件路径")
+
+    # account password-strength
+    account_password_parser = account_subparsers.add_parser("password-strength", help="检测密码强度")
+    account_password_parser.add_argument("password", type=str, help="要检测的密码")
+
+    # account 2fa-guide
+    account_2fa_parser = account_subparsers.add_parser("2fa-guide", help="显示2FA配置指南")
+
+    # account guide
+    account_guide_parser = account_subparsers.add_parser("guide", help="显示账号安全最佳实践指南")
+
+    # Command: deps
+    deps_parser = subparsers.add_parser("deps", help="依赖安全审计 (漏洞扫描与License合规)")
+    deps_subparsers = deps_parser.add_subparsers(dest="deps_command", help="依赖安全子命令")
+
+    # deps scan
+    deps_scan_parser = deps_subparsers.add_parser("scan", help="扫描依赖漏洞")
+    deps_scan_parser.add_argument("path", type=str, help="项目目录路径 (如 '.')")
+
+    # deps check-licenses
+    deps_licenses_parser = deps_subparsers.add_parser("check-licenses", help="检查License合规性")
+    deps_licenses_parser.add_argument("path", type=str, help="项目目录路径 (如 '.')")
+
+    # deps supply-chain
+    deps_supply_chain_parser = deps_subparsers.add_parser("supply-chain", help="检测供应链投毒风险")
+    deps_supply_chain_parser.add_argument("path", type=str, help="项目目录路径 (如 '.')")
+
+    # deps guide
+    deps_guide_parser = deps_subparsers.add_parser("guide", help="显示依赖安全最佳实践指南")
+
     args = parser.parse_args()
 
     if args.command is None:
@@ -118,6 +171,205 @@ def main():
         else:
             print(f"正在审查 {args.path} ...")
             print(audit_content(args.path))
+
+    elif args.command == "payment":
+        from oms_core.payment import (
+            audit_payment,
+            check_params,
+            detect_zero_order,
+            check_callback_security,
+            get_payment_guide
+        )
+
+        if args.payment_command == "audit":
+            if console:
+                with console.status(f"[bold yellow]正在审计支付代码 {args.path} ...[/bold yellow]", spinner="dots"):
+                    report = audit_payment(args.path)
+                console.print(Markdown(report))
+            else:
+                print(f"正在审计支付代码 {args.path} ...")
+                print(audit_payment(args.path))
+
+        elif args.payment_command == "check":
+            if args.params:
+                # 读取文件内容进行检查
+                try:
+                    with open(args.params, 'r', encoding='utf-8') as f:
+                        code_content = f.read()
+                    findings = check_params(code_content)
+                    report = _format_findings_report(findings, args.params, "参数篡改风险检查")
+                except Exception as e:
+                    report = f"读取文件失败: {e}"
+
+                if console:
+                    console.print(Markdown(report))
+                else:
+                    print(report)
+
+            elif args.callback:
+                try:
+                    with open(args.callback, 'r', encoding='utf-8') as f:
+                        code_content = f.read()
+                    findings = check_callback_security(code_content)
+                    report = _format_findings_report(findings, args.callback, "回调安全检查")
+                except Exception as e:
+                    report = f"读取文件失败: {e}"
+
+                if console:
+                    console.print(Markdown(report))
+                else:
+                    print(report)
+
+            else:
+                if console:
+                    console.print("[yellow]请指定检查类型: --params 或 --callback[/yellow]")
+                else:
+                    print("请指定检查类型: --params 或 --callback")
+
+        elif args.payment_command == "guide":
+            if console:
+                console.print(Markdown(get_payment_guide()))
+            else:
+                print(get_payment_guide())
+
+        else:
+            if console:
+                payment_parser.print_help()
+            else:
+                payment_parser.print_help()
+
+    elif args.command == "account":
+        from oms_core.account import (
+            audit_account_security,
+            check_password_strength,
+            get_2fa_guide,
+            get_account_guide
+        )
+
+        if args.account_command == "check":
+            if console:
+                with console.status(f"[bold blue]正在检查账号安全配置 {args.path} ...[/bold blue]", spinner="dots"):
+                    report = audit_account_security(args.path)
+                console.print(Markdown(report))
+            else:
+                print(f"正在检查账号安全配置 {args.path} ...")
+                print(audit_account_security(args.path))
+
+        elif args.account_command == "password-strength":
+            result = check_password_strength(args.password)
+            if console:
+                score = result.get("score", 0)
+                color = "green" if score >= 80 else ("yellow" if score >= 50 else "red")
+                console.print(f"\n[bold]密码强度检测报告[/bold]")
+                console.print(f"[bold]评分:[/bold] [{color}]{score}/100[/{color}]")
+                console.print(f"[bold]等级:[/bold] [{color}]{result.get('level', 'N/A')}[/{color}]")
+
+                if result.get("warnings"):
+                    console.print(f"\n[yellow]警告:[/yellow]")
+                    for warning in result["warnings"]:
+                        console.print(f"  - {warning}")
+
+                if result.get("suggestions"):
+                    console.print(f"\n[cyan]建议:[/cyan]")
+                    for suggestion in result["suggestions"]:
+                        console.print(f"  - {suggestion}")
+            else:
+                print(f"\n密码强度检测报告")
+                print(f"评分: {result.get('score', 0)}/100")
+                print(f"等级: {result.get('level', 'N/A')}")
+                if result.get("warnings"):
+                    print("警告:")
+                    for warning in result["warnings"]:
+                        print(f"  - {warning}")
+
+        elif args.account_command == "2fa-guide":
+            if console:
+                console.print(Markdown(get_2fa_guide()))
+            else:
+                print(get_2fa_guide())
+
+        elif args.account_command == "guide":
+            if console:
+                console.print(Markdown(get_account_guide()))
+            else:
+                print(get_account_guide())
+
+        else:
+            if console:
+                account_parser.print_help()
+            else:
+                account_parser.print_help()
+
+    elif args.command == "deps":
+        from oms_core.deps import (
+            scan_dependencies,
+            check_licenses,
+            detect_supply_chain_risk,
+            get_deps_guide
+        )
+
+        if args.deps_command == "scan":
+            if console:
+                with console.status(f"[bold red]正在扫描依赖漏洞 {args.path} ...[/bold red]", spinner="dots"):
+                    report = scan_dependencies(args.path)
+                console.print(Markdown(report))
+            else:
+                print(f"正在扫描依赖漏洞 {args.path} ...")
+                print(scan_dependencies(args.path))
+
+        elif args.deps_command == "check-licenses":
+            if console:
+                with console.status(f"[bold purple]正在检查License合规性 {args.path} ...[/bold purple]", spinner="dots"):
+                    report = check_licenses(args.path)
+                console.print(Markdown(report))
+            else:
+                print(f"正在检查License合规性 {args.path} ...")
+                print(check_licenses(args.path))
+
+        elif args.deps_command == "supply-chain":
+            if console:
+                with console.status(f"[bold yellow]正在检测供应链投毒风险 {args.path} ...[/bold yellow]", spinner="dots"):
+                    report = detect_supply_chain_risk(args.path)
+                console.print(Markdown(report))
+            else:
+                print(f"正在检测供应链投毒风险 {args.path} ...")
+                print(detect_supply_chain_risk(args.path))
+
+        elif args.deps_command == "guide":
+            if console:
+                console.print(Markdown(get_deps_guide()))
+            else:
+                print(get_deps_guide())
+
+        else:
+            if console:
+                deps_parser.print_help()
+            else:
+                deps_parser.print_help()
+
+
+def _format_findings_report(findings, path: str, title: str) -> str:
+    """格式化漏洞发现报告"""
+    if not findings:
+        return f"""# {title}
+
+**检查路径**: `{path}`
+
+> 未发现明显问题。
+"""
+
+    report_lines = [f"# {title}", "", f"**检查路径**: `{path}`", f"**发现问题**: {len(findings)}", ""]
+
+    for i, f in enumerate(findings, 1):
+        report_lines.append(f"## {i}. [{f.severity}] {f.category}")
+        report_lines.append(f"- **描述**: {f.description}")
+        report_lines.append(f"- **影响**: {f.impact}")
+        report_lines.append(f"- **建议**: {f.recommendation}")
+        if f.code_snippet:
+            report_lines.append(f"- **代码**: `{f.code_snippet}`")
+        report_lines.append("")
+
+    return "\n".join(report_lines)
 
 if __name__ == "__main__":
     main()
