@@ -176,6 +176,50 @@ def main():
     # ai guide
     ai_guide_parser = ai_subparsers.add_parser("guide", help="显示 AI 安全最佳实践指南")
 
+    # Command: mobile
+    mobile_parser = subparsers.add_parser("mobile", help="移动设备安全审计 (设备丢失与权限管理)")
+    mobile_subparsers = mobile_parser.add_subparsers(dest="mobile_command", help="移动安全子命令")
+
+    # mobile check
+    mobile_check_parser = mobile_subparsers.add_parser("check", help="检查移动设备安全配置")
+    mobile_check_parser.add_argument("--config", type=str, metavar="FILE", help="设备配置文件路径 (JSON)")
+
+    # mobile guide
+    mobile_guide_parser = mobile_subparsers.add_parser("guide", help="显示移动安全最佳实践指南")
+
+    # Command: social
+    social_parser = subparsers.add_parser("social", help="社媒账号安全审计 (冒充与钓鱼检测)")
+    social_subparsers = social_parser.add_subparsers(dest="social_command", help="社媒安全子命令")
+
+    # social check
+    social_check_parser = social_subparsers.add_parser("check", help="检查社媒账号安全配置")
+    social_check_parser.add_argument("--config", type=str, metavar="FILE", help="账号配置文件路径 (JSON)")
+
+    # social guide
+    social_guide_parser = social_subparsers.add_parser("guide", help="显示社媒安全最佳实践指南")
+
+    # Command: crypto
+    crypto_parser = subparsers.add_parser("crypto", help="加密资产安全审计 (私钥与钱包安全)")
+    crypto_subparsers = crypto_parser.add_subparsers(dest="crypto_command", help="加密资产安全子命令")
+
+    # crypto check
+    crypto_check_parser = crypto_subparsers.add_parser("check", help="检查加密资产安全配置")
+    crypto_check_parser.add_argument("--config", type=str, metavar="FILE", help="钱包配置文件路径 (JSON)")
+
+    # crypto guide
+    crypto_guide_parser = crypto_subparsers.add_parser("guide", help="显示加密资产安全最佳实践指南")
+
+    # Command: compliance
+    compliance_parser = subparsers.add_parser("compliance", help="合规自查审计 (GDPR与隐私政策)")
+    compliance_subparsers = compliance_parser.add_subparsers(dest="compliance_command", help="合规自查子命令")
+
+    # compliance check
+    compliance_check_parser = compliance_subparsers.add_parser("check", help="检查数据合规配置")
+    compliance_check_parser.add_argument("--config", type=str, metavar="FILE", help="合规配置文件路径 (JSON)")
+
+    # compliance guide
+    compliance_guide_parser = compliance_subparsers.add_parser("guide", help="显示合规最佳实践指南")
+
     args = parser.parse_args()
 
     if args.command is None:
@@ -581,6 +625,199 @@ def main():
                 ai_parser.print_help()
             else:
                 ai_parser.print_help()
+
+    elif args.command == "mobile":
+        from oms_core.mobile import (
+            audit_mobile_security,
+            get_mobile_guide
+        )
+        import json
+
+        if args.mobile_command == "check":
+            if args.config:
+                try:
+                    with open(args.config, 'r', encoding='utf-8') as f:
+                        config = json.load(f)
+                    if console:
+                        with console.status("[bold cyan]正在检查移动设备安全配置...[/bold cyan]", spinner="dots"):
+                            report = audit_mobile_security(config)
+                        console.print(Markdown(report))
+                    else:
+                        print(audit_mobile_security(config))
+                except FileNotFoundError:
+                    print(f"配置文件不存在: {args.config}")
+                except json.JSONDecodeError as e:
+                    print(f"配置文件格式错误: {e}")
+            else:
+                # 使用示例配置进行演示
+                demo_config = {
+                    'device': {'remote_lock_enabled': True, 'device_encryption': True},
+                    'lock_screen': {'auto_lock_minutes': 1, 'show_notification_content': False},
+                    'sim': {'sim_pin_enabled': True}
+                }
+                if console:
+                    with console.status("[bold cyan]正在检查移动设备安全配置 (演示模式)...[/bold cyan]", spinner="dots"):
+                        report = audit_mobile_security(demo_config)
+                    console.print(Markdown(report))
+                else:
+                    print(audit_mobile_security(demo_config))
+
+        elif args.mobile_command == "guide":
+            if console:
+                console.print(Markdown(get_mobile_guide()))
+            else:
+                print(get_mobile_guide())
+
+        else:
+            if console:
+                mobile_parser.print_help()
+            else:
+                mobile_parser.print_help()
+
+    elif args.command == "social":
+        from oms_core.social import (
+            audit_social_security,
+            get_social_guide
+        )
+        import json
+
+        if args.social_command == "check":
+            if args.config:
+                try:
+                    with open(args.config, 'r', encoding='utf-8') as f:
+                        config = json.load(f)
+                    if console:
+                        with console.status("[bold magenta]正在检查社媒账号安全配置...[/bold magenta]", spinner="dots"):
+                            report = audit_social_security(config)
+                        console.print(Markdown(report))
+                    else:
+                        print(audit_social_security(config))
+                except FileNotFoundError:
+                    print(f"配置文件不存在: {args.config}")
+                except json.JSONDecodeError as e:
+                    print(f"配置文件格式错误: {e}")
+            else:
+                # 使用示例配置进行演示
+                demo_config = {
+                    'instagram': {'verified': False, 'private_account': True},
+                    'twitter': {'verified': True, 'private_account': False}
+                }
+                if console:
+                    with console.status("[bold magenta]正在检查社媒账号安全配置 (演示模式)...[/bold magenta]", spinner="dots"):
+                        report = audit_social_security(demo_config)
+                    console.print(Markdown(report))
+                else:
+                    print(audit_social_security(demo_config))
+
+        elif args.social_command == "guide":
+            if console:
+                console.print(Markdown(get_social_guide()))
+            else:
+                print(get_social_guide())
+
+        else:
+            if console:
+                social_parser.print_help()
+            else:
+                social_parser.print_help()
+
+    elif args.command == "crypto":
+        from oms_core.crypto import (
+            audit_crypto_security,
+            get_crypto_guide
+        )
+        import json
+
+        if args.crypto_command == "check":
+            if args.config:
+                try:
+                    with open(args.config, 'r', encoding='utf-8') as f:
+                        config = json.load(f)
+                    if console:
+                        with console.status("[bold yellow]正在检查加密资产安全配置...[/bold yellow]", spinner="dots"):
+                            report = audit_crypto_security(config)
+                        console.print(Markdown(report))
+                    else:
+                        print(audit_crypto_security(config))
+                except FileNotFoundError:
+                    print(f"配置文件不存在: {args.config}")
+                except json.JSONDecodeError as e:
+                    print(f"配置文件格式错误: {e}")
+            else:
+                # 使用示例配置进行演示
+                demo_config = {
+                    'ethereum': {
+                        'storage_type': 'hardware_wallet',
+                        'has_backup': True,
+                        'approvals': []
+                    }
+                }
+                if console:
+                    with console.status("[bold yellow]正在检查加密资产安全配置 (演示模式)...[/bold yellow]", spinner="dots"):
+                        report = audit_crypto_security(demo_config)
+                    console.print(Markdown(report))
+                else:
+                    print(audit_crypto_security(demo_config))
+
+        elif args.crypto_command == "guide":
+            if console:
+                console.print(Markdown(get_crypto_guide()))
+            else:
+                print(get_crypto_guide())
+
+        else:
+            if console:
+                crypto_parser.print_help()
+            else:
+                crypto_parser.print_help()
+
+    elif args.command == "compliance":
+        from oms_core.compliance import (
+            audit_compliance,
+            get_compliance_guide
+        )
+        import json
+
+        if args.compliance_command == "check":
+            if args.config:
+                try:
+                    with open(args.config, 'r', encoding='utf-8') as f:
+                        config = json.load(f)
+                    if console:
+                        with console.status("[bold blue]正在进行合规自查...[/bold blue]", spinner="dots"):
+                            report = audit_compliance(config)
+                        console.print(Markdown(report))
+                    else:
+                        print(audit_compliance(config))
+                except FileNotFoundError:
+                    print(f"配置文件不存在: {args.config}")
+                except json.JSONDecodeError as e:
+                    print(f"配置文件格式错误: {e}")
+            else:
+                # 使用示例配置进行演示
+                demo_config = {
+                    'practices': {'has_legal_basis': True},
+                    'privacy_policy': {'exists': True, 'controller_info': True},
+                    'cookies': {'has_banner': True, 'accept_only': False}
+                }
+                if console:
+                    with console.status("[bold blue]正在进行合规自查 (演示模式)...[/bold blue]", spinner="dots"):
+                        report = audit_compliance(demo_config)
+                    console.print(Markdown(report))
+                else:
+                    print(audit_compliance(demo_config))
+
+        elif args.compliance_command == "guide":
+            if console:
+                console.print(Markdown(get_compliance_guide()))
+            else:
+                print(get_compliance_guide())
+
+        else:
+            if console:
+                compliance_parser.print_help()
+            else:
+                compliance_parser.print_help()
 
 
 def _format_findings_report(findings, path: str, title: str) -> str:
